@@ -1,0 +1,7 @@
+g++ -Wall -O3 -march=native `root-config --cflags` test_depth_averaging.cpp -I ../include/ -I `root-config --incdir` `root-config --glibs` -o test_depth_averaging
+
+g++ -Wall -O3 -march=native `root-config --cflags` test_depth_averaging2.cpp -I ../include/ -I `root-config --incdir` `root-config --glibs` -o test_depth_averaging2
+
+g++ -Wall -O3 -march=native `root-config --cflags` test_depth_averaging3.cpp -I ../include/ -I `root-config --incdir` `root-config --glibs` -o test_depth_averaging3
+
+g++ -Wall -O3 -march=native `root-config --cflags` test_depth_averaging4.cpp -I ../include/ -I `root-config --incdir` `root-config --glibs` -o test_depth_averaging4
