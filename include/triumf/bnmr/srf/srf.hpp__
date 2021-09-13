@@ -1,0 +1,113 @@
+#ifndef TRIUMF_BNMR_ANALYSIS_SRF_HPP
+#define TRIUMF_BNMR_ANALYSIS_SRF_HPP
+
+#include <triumf/nmr/dipole_dipole.hpp>
+#include <triumf/srim/pdf.hpp>
+#include <triumf/superconductivity/pippard.hpp>
+
+// TRIUMF: Canada's particle accerlator centre
+namespace triumf {
+
+// beta-detected nuclear magnetic resonance (beta-NMR)
+namespace bnmr {
+
+// analysis functions
+namespace analysis {
+
+// superconducting radio-frequency (SRF) materials
+namespace srf{
+
+
+class DepthResolvedSLR {
+	public:
+		// constructor
+		DepthResolvedSLR();
+		
+		// for interfacing with ROOT's TF1 objects
+		double operator() (const double *x, const double *par) {
+			double T = *x;
+			double T_c = par[0];
+			double Delta = par[1];
+			double xi_0 = par[2];
+			double ell = par[3];
+			double lambda_0 = par[4];
+			double n = par[5];
+			double B_0 = par[6];
+			
+			
+			double E = par[7];
+			
+			
+			
+			double slr_rate = 0.0;
+			
+			std::vector<double> zz = triumf::numpy::linspace<double>(0.0, 500.0, 100);
+			// start at 1 so we don't access the vector out-of-bounds!
+			for (std::size_t i = 1; i < zz.size(); ++i) {
+				// compute the "bin" width and center
+				double dz = zz.at(i) - zz.at(i - 1);
+				double z = zz.at(i) - 0.5 * dz;
+				
+				//  need way to get from E to stopping profile params
+				
+				double rho = triumf::srim::pdf::modified_beta(z, alpha, beta, z_max);
+				
+				double B_z = triumf::superconductivity::pippard::field_screening(z, T, T_c, Delta, xi_0, ell, n, B_0);
+				
+				
+				double weight = rho * dz;
+				slr_rate += weight * triumf::nmr::dipole_dipole<double>();
+			}
+			
+			
+			
+			
+			
+			return slr_rate;
+		}
+	private:
+		
+
+}
+
+
+
+(T temperature, T critical_temperature, T gap_meV, T xi_0, T mean_free_path, T lambda_0, T exponent, T applied_field) {
+
+
+}
+
+// fit model - combining all of the above
+double model(double T, double T_c, double lambda_L_0, double B_0, double z_0,
+             double dead_layer, double B_d, double nu_c, double constant,
+             double n) {
+  double lambda_L = lambda_L_T(T, T_c, lambda_L_0);
+  double B_avg = B_z_London(z_0, B_0, lambda_L, dead_layer);
+  // double B_avg = B_z_EA(z_0, B_0, lambda_L, dead_layer);
+  // double rate = BPP(B_avg, B_d, nu_c, gamma_8Li);
+  double rate = J_DD(B_avg, B_d, nu_c, gamma_8Li, gamma_93Nb);
+  return constant * std::pow(T, n) + rate;
+  
+  
+  
+  std::vector<double> z = triumf::numpy::linspace<double>(0.0, 500.0, 100);
+  double 
+  
+  
+  field_penetration(z, T temperature, T critical_temperature, T gap_meV,
+                    T xi_0, T mean_free_path, T lambda_0, T exponent,
+                    T applied_field)
+  
+  
+  
+}
+
+} // srf
+
+} // analysis
+
+} // bnmr
+
+} // namespace triumf
+
+#endif // TRIUMF_BNMR_ANALYSIS_SRF_HPP
