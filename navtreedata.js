@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "triumf++", "index.html", [
     [ "Requirements", "index.html#autotoc_md1", null ],
+    [ "Documentation", "index.html#autotoc_md2", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -51,18 +52,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"namespacetriumf_1_1srim_1_1pdf.html#a20839f02e31d16011d9e618621cec48f",
-"structtriumf_1_1constants_1_1codata__2006_1_1Cu__x__unit.html",
-"structtriumf_1_1constants_1_1codata__2006_1_1elementary__charge.html",
-"structtriumf_1_1constants_1_1codata__2006_1_1proton__gyromag__ratio.html",
-"structtriumf_1_1constants_1_1codata__2010_1_1atomic__unit__of__1st__hyperpolarizability.html",
-"structtriumf_1_1constants_1_1codata__2010_1_1kelvin__atomic__mass__unit__relationship.html",
-"structtriumf_1_1constants_1_1codata__2010_1_1tau__mass.html",
-"structtriumf_1_1constants_1_1codata__2014_1_1deuteron__proton__mag__mom__ratio.html",
-"structtriumf_1_1constants_1_1codata__2014_1_1muon__proton__mag__mom__ratio.html",
-"structtriumf_1_1constants_1_1codata__2018_1_1Josephson__constant.html",
-"structtriumf_1_1constants_1_1codata__2018_1_1electron__volt__joule__relationship.html",
-"structtriumf_1_1constants_1_1codata__2018_1_1neutron__tau__mass__ratio.html"
+"namespacetriumf_1_1srim_1_1pdf.html",
+"structtriumf_1_1constants_1_1codata__2006_1_1Compton__wavelength__over__2__pi.html",
+"structtriumf_1_1constants_1_1codata__2006_1_1electron__volt__kilogram__relationship.html",
+"structtriumf_1_1constants_1_1codata__2006_1_1proton__g__factor.html",
+"structtriumf_1_1constants_1_1codata__2010_1_1atomic__mass__unit__kilogram__relationship.html",
+"structtriumf_1_1constants_1_1codata__2010_1_1joule__kilogram__relationship.html",
+"structtriumf_1_1constants_1_1codata__2010_1_1tau__electron__mass__ratio.html",
+"structtriumf_1_1constants_1_1codata__2014_1_1deuteron__neutron__mag__mom__ratio.html",
+"structtriumf_1_1constants_1_1codata__2014_1_1muon__neutron__mass__ratio.html",
+"structtriumf_1_1constants_1_1codata__2018_1_1Hartree__energy__in__eV.html",
+"structtriumf_1_1constants_1_1codata__2018_1_1electron__volt__inverse__meter__relationship.html",
+"structtriumf_1_1constants_1_1codata__2018_1_1neutron__relative__atomic__mass.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
