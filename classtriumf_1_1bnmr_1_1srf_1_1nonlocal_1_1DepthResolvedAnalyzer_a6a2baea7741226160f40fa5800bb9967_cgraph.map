@@ -1,0 +1,6 @@
+<map id="triumf::bnmr::srf::nonlocal::DepthResolvedAnalyzer::operator()" name="triumf::bnmr::srf::nonlocal::DepthResolvedAnalyzer::operator()">
+<area shape="rect" id="node1" title=" " alt="" coords="5,77,219,133"/>
+<area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#ac198d2ab0ca052f5482339d68fe3835c" title="Return an interpolated alpha value." alt="" coords="282,5,495,61"/>
+<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a1a9967fadf57978c0dd8f7edab37d9d3" title="Return an interpolated beta value." alt="" coords="267,85,511,126"/>
+<area shape="rect" id="node4" href="$classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a3989d968f937335f97eac04b0c3f73ab" title="Return an interpolated z_max value." alt="" coords="282,149,495,205"/>
+</map>

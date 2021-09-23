@@ -1,0 +1,26 @@
+var classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer =
+[
+    [ "DepthResolvedAnalyzer", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a5ef8f9deb9818a22594eabda846ec011", null ],
+    [ "alpha", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#ac198d2ab0ca052f5482339d68fe3835c", null ],
+    [ "beta", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a1a9967fadf57978c0dd8f7edab37d9d3", null ],
+    [ "energy_max", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#ac7484840eceb83ed746c06d862948a47", null ],
+    [ "energy_min", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a5e2aa039cb9baf5922f3571f09be9461", null ],
+    [ "operator()", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a6a2baea7741226160f40fa5800bb9967", null ],
+    [ "z_average", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a090d1db40b6da4a343f6a060ee376a71", null ],
+    [ "z_max", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a3989d968f937335f97eac04b0c3f73ab", null ],
+    [ "applied_field", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#aea2e2db7110fa4f191125c4602865472", null ],
+    [ "correlation_rate", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a584e1ed118184a294a4db918f6fe8b0d", null ],
+    [ "critical_temperature", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a0b1e3f675feaaed0ebc61791cc27728c", null ],
+    [ "dipole_field", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a3816d7825ce156556cdc9a1185956ccc", null ],
+    [ "electron_phonon_coupling", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a5c450404b0d9da0796584193f2c10b4b", null ],
+    [ "exponent", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a4cc9c0daf8cbeddfc2b5fa18adc6410b", null ],
+    [ "gap_meV", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a39810f89c3d55f26268c25dad6f19b7e", null ],
+    [ "lambda_0", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a3aa6415943750b7903a27f2cf615945b", null ],
+    [ "mean_free_path", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#aefb9d4b59f800e2c106cf028219bcf21", null ],
+    [ "slr_constant", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a840deab26c5d5db943b87b27bf5aa41e", null ],
+    [ "slr_exponent", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a9ceb703319d2bad061dac4491a776e9e", null ],
+    [ "surface_rate", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a44ef9d058bd2d0387bc80e7c3faaf6b3", null ],
+    [ "surface_thickness", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a1f9f4bc8fab9fad9b480d2ef8e659a83", null ],
+    [ "temperature", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a8811946d27f85cd582c54d7cf8ad7bf8", null ],
+    [ "xi_0", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#ad383dd3bc10a7e4bba44fd44322bba1f", null ]
+];

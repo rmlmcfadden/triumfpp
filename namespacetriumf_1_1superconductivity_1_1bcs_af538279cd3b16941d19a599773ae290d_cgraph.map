@@ -1,0 +1,4 @@
+<map id="triumf::superconductivity::bcs::gap_meV" name="triumf::superconductivity::bcs::gap_meV">
+<area shape="rect" id="node1" title="energy gap at absolute zero" alt="" coords="5,13,168,54"/>
+<area shape="rect" id="node2" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="216,5,388,61"/>
+</map>

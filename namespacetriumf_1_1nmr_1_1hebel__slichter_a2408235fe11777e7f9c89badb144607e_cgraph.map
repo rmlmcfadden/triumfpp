@@ -1,0 +1,5 @@
+<map id="triumf::nmr::hebel_slichter::slr_ratio" name="triumf::nmr::hebel_slichter::slr_ratio">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,128,76"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="176,5,339,47"/>
+<area shape="rect" id="node3" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="387,27,559,83"/>
+</map>

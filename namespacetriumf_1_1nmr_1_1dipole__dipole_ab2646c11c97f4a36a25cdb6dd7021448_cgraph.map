@@ -1,0 +1,5 @@
+<map id="triumf::nmr::dipole_dipole::j" name="triumf::nmr::dipole_dipole::j">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,128,54"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="176,20,293,47"/>
+<area shape="rect" id="node3" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="341,5,513,61"/>
+</map>

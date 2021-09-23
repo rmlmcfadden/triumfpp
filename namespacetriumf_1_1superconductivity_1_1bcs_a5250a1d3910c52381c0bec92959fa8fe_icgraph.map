@@ -1,0 +1,4 @@
+<map id="triumf::superconductivity::bcs::f" name="triumf::superconductivity::bcs::f">
+<area shape="rect" id="node1" title="helper function for BCS Kernel" alt="" coords="224,5,387,47"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#aab64f016dc8f9d09862037131b0b5835" title="Find the reduced gap Delta(t) for a given reduced temperature x = T / T_c." alt="" coords="5,5,176,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="triumf::global_chi2::operator()" name="triumf::global_chi2::operator()">
+<area shape="rect" id="node1" title="necessary for integration w/ ROOT&#39;s fitting objects" alt="" coords="5,39,132,80"/>
+<area shape="rect" id="node2" href="$classtriumf_1_1global__chi2.html#a9cdd6b77eea049b11a4188970c436559" title="constructor" alt="" coords="180,5,307,47"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="182,71,305,112"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="355,78,472,105"/>
+<area shape="rect" id="node5" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="520,63,692,119"/>
+</map>

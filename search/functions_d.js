@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['m_0',['M',['../namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd',1,'triumf::superconductivity::dynes']]],
+  ['magnetic_5fdipole_5fmoment_1',['magnetic_dipole_moment',['../structtriumf_1_1bnmr_1_1nuclei_1_1lithium__8.html#aec5aeb88be996d0ebe62671c7f44ea3a',1,'triumf::bnmr::nuclei::lithium_8::magnetic_dipole_moment()'],['../structtriumf_1_1bnmr_1_1nuclei_1_1beryllium__11.html#a9c4349a84ffdcc48c55d4cf4bc9ae3c8',1,'triumf::bnmr::nuclei::beryllium_11::magnetic_dipole_moment()'],['../structtriumf_1_1bnmr_1_1nuclei_1_1boron__12.html#a357272fd701e05943081870282f27d9e',1,'triumf::bnmr::nuclei::boron_12::magnetic_dipole_moment()'],['../structtriumf_1_1bnmr_1_1nuclei_1_1magnesium__31.html#a56e99c92184d4ba1ed30cfcab01f952d',1,'triumf::bnmr::nuclei::magnesium_31::magnetic_dipole_moment()'],['../structtriumf_1_1nmr_1_1nuclei_1_1niobium__93.html#a4a16daa29a6b9c3d6c719c53ceb8a45d',1,'triumf::nmr::nuclei::niobium_93::magnetic_dipole_moment()']]],
+  ['modified_5fbeta_2',['modified_beta',['../namespacetriumf_1_1srim_1_1pdf.html#a20839f02e31d16011d9e618621cec48f',1,'triumf::srim::pdf::modified_beta(T x, T alpha, T beta, T x_max)'],['../namespacetriumf_1_1srim_1_1pdf.html#a7fdbc01932bc626746f36eceb5a9948d',1,'triumf::srim::pdf::modified_beta(const T *x, const T *par)']]]
+];
