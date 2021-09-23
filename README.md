@@ -13,7 +13,7 @@ facility.
 ## Documentation
 
 Some documentation of the source code (generated via [Doxygen])
-can be found at: <http://rmlmcfadden.github.io/triumfpp/>.
+can be found at: <https://rmlmcfadden.github.io/triumfpp/>.
 
 [Doxygen]: https://www.doxygen.nl/
 [ROOT]: https://root.cern/
