@@ -5,10 +5,10 @@
 
 #include <triumf/constants/codata_2018.hpp>
 
-// TRIUMF: Canada's particle accerlator centre
+// TRIUMF: Canada's particle accelerator centre
 namespace triumf {
 
-// nuclear magnetic resonance (beta-NMR)
+// nuclear magnetic resonance
 namespace nmr {
 
 // miscellaneous helper functions

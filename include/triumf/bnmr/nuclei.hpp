@@ -5,7 +5,7 @@
 
 #include <triumf/nmr/utilities.hpp>
 
-// TRIUMF: Canada's particle accerlator centre
+// TRIUMF: Canada's particle accelerator centre
 namespace triumf {
 
 // β-detected nuclear magnetic resonance (β-NMR)

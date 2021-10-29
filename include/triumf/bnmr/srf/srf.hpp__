@@ -5,7 +5,7 @@
 #include <triumf/srim/pdf.hpp>
 #include <triumf/superconductivity/pippard.hpp>
 
-// TRIUMF: Canada's particle accerlator centre
+// TRIUMF: Canada's particle accelerator centre
 namespace triumf {
 
 // beta-detected nuclear magnetic resonance (beta-NMR)

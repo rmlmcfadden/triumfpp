@@ -26,7 +26,7 @@
 #include <ROOT/RDF/RInterface.hxx>
 #include <ROOT/RDataFrame.hxx>
 
-// TRIUMF: Canada's particle accerlator centre
+// TRIUMF: Canada's particle accelerator centre
 namespace triumf {
 
 // β-detected nuclear magnetic resonance (β-NMR)
