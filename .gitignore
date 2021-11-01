@@ -33,3 +33,7 @@
 
 # Doxygen / Documentation
 doc/**
+
+# Test executables
+tests/*
+!tests/*.cpp
