@@ -37,3 +37,7 @@ doc/**
 # Test executables
 tests/*
 !tests/*.cpp
+
+# Examples
+examples/*
+!examples/*.cpp
