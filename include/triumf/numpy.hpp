@@ -4,7 +4,7 @@
 #include <cmath>
 #include <vector>
 
-// TRIUMF: Canada's particle accerlerator centre
+// TRIUMF: Canada's particle accelerator centre
 namespace triumf {
 
 // NumPy inspired functions
