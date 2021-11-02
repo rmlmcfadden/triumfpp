@@ -6,6 +6,7 @@ var classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer =
     [ "energy_max", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a6767f38e31c0baffd5a608aaec62f177", null ],
     [ "energy_min", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a9803d3ed9cc21186f02d4501ef85545c", null ],
     [ "operator()", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a52677dc929ccf6d21c8ffc1b0283f379", null ],
+    [ "read_csv_data", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#ad758532e679abab27c3a0b50d4bf5640", null ],
     [ "z_average", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#ae7d933aebac69f559a42cdf2ce57e584", null ],
     [ "z_max", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#ab0eb2e77e7157843d8e602170c3bc631", null ],
     [ "applied_field", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a6db92fd7524eab4080e8d3c637cc18e1", null ],

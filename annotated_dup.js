@@ -10,7 +10,8 @@ var annotated_dup =
         ] ],
         [ "srf", "namespacetriumf_1_1bnmr_1_1srf.html", [
           [ "local", "namespacetriumf_1_1bnmr_1_1srf_1_1local.html", [
-            [ "DepthResolvedAnalyzer", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer" ]
+            [ "DepthResolvedAnalyzer", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer" ],
+            [ "DepthResolvedFilmAnalyzer", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer.html", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer" ]
           ] ],
           [ "nonlocal", "namespacetriumf_1_1bnmr_1_1srf_1_1nonlocal.html", [
             [ "DepthResolvedAnalyzer", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html", "classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer" ]

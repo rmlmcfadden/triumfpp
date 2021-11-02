@@ -1,29 +1,32 @@
 <map id="triumf::superconductivity::bcs::gap_meV" name="triumf::superconductivity::bcs::gap_meV">
-<area shape="rect" id="node1" title="energy gap at absolute zero" alt="" coords="545,706,708,747"/>
-<area shape="rect" id="node2" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a5c14c926951b146a6959b34bbac7512d" title="helper function for BCS Kernel" alt="" coords="301,53,463,94"/>
-<area shape="rect" id="node5" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#aeabe52ef60474ae5f6ef3ef70a8eff80" title=" " alt="" coords="293,118,471,159"/>
-<area shape="rect" id="node6" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a55cb03cb4c00fba1b9e9bab82fc1a314" title="temperature dependence of the BCS coherence length (helper function)" alt="" coords="301,183,463,225"/>
-<area shape="rect" id="node7" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a5250a1d3910c52381c0bec92959fa8fe" title="helper function for BCS Kernel" alt="" coords="301,249,463,290"/>
-<area shape="rect" id="node9" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a1774f527fb9576fc12fc9c7685827fac" title="BCS magnetic field penetration proifile." alt="" coords="301,314,463,355"/>
-<area shape="rect" id="node10" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#a70cbc74256d3c2e44a8f7ba05de5ffbe" title="magnetic field penetration proifile" alt="" coords="297,379,467,421"/>
-<area shape="rect" id="node11" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a7372d33b9615d0ee1d58a98608a4d154" title="temperature dependence of the energy gap" alt="" coords="301,445,463,486"/>
-<area shape="rect" id="node12" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a2a18fa4ca2f06480f842304954f6f104" title=" " alt="" coords="301,510,463,551"/>
-<area shape="rect" id="node13" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="317,575,447,617"/>
-<area shape="rect" id="node16" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#a5ff35897cc2558e1fe04f975a981631d" title=" " alt="" coords="301,641,463,682"/>
-<area shape="rect" id="node17" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a34f49870869dac4891af00d3adf183df" title="BCS Kernel." alt="" coords="301,706,463,747"/>
-<area shape="rect" id="node18" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#adf5e8e81b8c5e682b25c1887e1f72d97" title="Pippard Kernel." alt="" coords="301,771,463,813"/>
-<area shape="rect" id="node19" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a7780dd60982da50427378f9e5ab1c621" title="helper function for BCS Kernel" alt="" coords="301,837,463,878"/>
-<area shape="rect" id="node20" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a10c6fb751e3685dc4c462b3b7fa2743f" title="BCS magnetic penetration depth." alt="" coords="301,902,463,943"/>
-<area shape="rect" id="node21" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#a676bf97d06d275c7d30c2ebe00929f98" title=" " alt="" coords="267,967,497,1009"/>
-<area shape="rect" id="node22" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a8cbf1daf81ab4fc54f8ab40dc8d9ec62" title="(reduced) BCS magnetic field penetration profile" alt="" coords="281,1033,483,1074"/>
-<area shape="rect" id="node23" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#aeebe7bcc48d21b9c644880adef74a2be" title="(reduced) magnetic field penetration proifile" alt="" coords="301,1097,463,1153"/>
-<area shape="rect" id="node24" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a9b0030c8f12e098c659be41ddd017b32" title="(reduced) BCS Kernel" alt="" coords="301,1177,463,1218"/>
-<area shape="rect" id="node25" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#ae9fae6e4b758c98f2e168245184b3a1c" title="(reduced) Pippard Kernel" alt="" coords="300,1242,464,1283"/>
-<area shape="rect" id="node26" href="$namespacetriumf_1_1bnmr_1_1srf_1_1nonlocal.html#af1f63ddcd5d9552dc24285e905af85a2" title="model slr rate" alt="" coords="316,1307,448,1349"/>
-<area shape="rect" id="node27" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a2408235fe11777e7f9c89badb144607e" title=" " alt="" coords="321,1373,443,1414"/>
-<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#ae7d933aebac69f559a42cdf2ce57e584" title="Return the average implantation depth." alt="" coords="16,5,208,61"/>
-<area shape="rect" id="node4" href="$classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a090d1db40b6da4a343f6a060ee376a71" title="Return the average implantation depth." alt="" coords="5,85,219,141"/>
-<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#aab64f016dc8f9d09862037131b0b5835" title="Find the reduced gap Delta(t) for a given reduced temperature x = T / T_c." alt="" coords="27,249,197,290"/>
-<area shape="rect" id="node14" href="$namespacetriumf_1_1srim_1_1pdf.html#a5ed0841444d832b681a8b7dd791ae5dc" title="see Eq. (5.6) in Md Masrur Hossain&#39;s MSc thesis, UBC, 2006, p. 52." alt="" coords="54,539,170,581"/>
-<area shape="rect" id="node15" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a52677dc929ccf6d21c8ffc1b0283f379" title="depth&#45;averaging using numeric integration" alt="" coords="16,604,208,660"/>
+<area shape="rect" id="node1" title="energy gap at absolute zero" alt="" coords="549,746,712,787"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a5c14c926951b146a6959b34bbac7512d" title="helper function for BCS Kernel" alt="" coords="305,93,467,134"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#aeabe52ef60474ae5f6ef3ef70a8eff80" title=" " alt="" coords="297,158,475,199"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a55cb03cb4c00fba1b9e9bab82fc1a314" title="temperature dependence of the BCS coherence length (helper function)" alt="" coords="305,223,467,265"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a5250a1d3910c52381c0bec92959fa8fe" title="helper function for BCS Kernel" alt="" coords="305,289,467,330"/>
+<area shape="rect" id="node10" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a1774f527fb9576fc12fc9c7685827fac" title="BCS magnetic field penetration proifile." alt="" coords="305,354,467,395"/>
+<area shape="rect" id="node11" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#a70cbc74256d3c2e44a8f7ba05de5ffbe" title="magnetic field penetration proifile" alt="" coords="301,419,471,461"/>
+<area shape="rect" id="node12" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a7372d33b9615d0ee1d58a98608a4d154" title="temperature dependence of the energy gap" alt="" coords="305,485,467,526"/>
+<area shape="rect" id="node13" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a2a18fa4ca2f06480f842304954f6f104" title=" " alt="" coords="305,550,467,591"/>
+<area shape="rect" id="node14" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="321,615,451,657"/>
+<area shape="rect" id="node19" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#a5ff35897cc2558e1fe04f975a981631d" title=" " alt="" coords="305,681,467,722"/>
+<area shape="rect" id="node20" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a34f49870869dac4891af00d3adf183df" title="BCS Kernel." alt="" coords="305,746,467,787"/>
+<area shape="rect" id="node21" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#adf5e8e81b8c5e682b25c1887e1f72d97" title="Pippard Kernel." alt="" coords="305,811,467,853"/>
+<area shape="rect" id="node22" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a7780dd60982da50427378f9e5ab1c621" title="helper function for BCS Kernel" alt="" coords="305,877,467,918"/>
+<area shape="rect" id="node23" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a10c6fb751e3685dc4c462b3b7fa2743f" title="BCS magnetic penetration depth." alt="" coords="305,942,467,983"/>
+<area shape="rect" id="node24" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#a676bf97d06d275c7d30c2ebe00929f98" title=" " alt="" coords="271,1007,501,1049"/>
+<area shape="rect" id="node25" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a8cbf1daf81ab4fc54f8ab40dc8d9ec62" title="(reduced) BCS magnetic field penetration profile" alt="" coords="285,1073,487,1114"/>
+<area shape="rect" id="node26" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#aeebe7bcc48d21b9c644880adef74a2be" title="(reduced) magnetic field penetration proifile" alt="" coords="305,1137,467,1193"/>
+<area shape="rect" id="node27" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a9b0030c8f12e098c659be41ddd017b32" title="(reduced) BCS Kernel" alt="" coords="305,1217,467,1258"/>
+<area shape="rect" id="node28" href="$namespacetriumf_1_1superconductivity_1_1pippard.html#ae9fae6e4b758c98f2e168245184b3a1c" title="(reduced) Pippard Kernel" alt="" coords="304,1282,468,1323"/>
+<area shape="rect" id="node29" href="$namespacetriumf_1_1bnmr_1_1srf_1_1nonlocal.html#af1f63ddcd5d9552dc24285e905af85a2" title="model slr rate" alt="" coords="320,1347,452,1389"/>
+<area shape="rect" id="node30" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a2408235fe11777e7f9c89badb144607e" title=" " alt="" coords="325,1413,447,1454"/>
+<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#ae7d933aebac69f559a42cdf2ce57e584" title="Return the average implantation depth." alt="" coords="18,5,210,61"/>
+<area shape="rect" id="node4" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer.html#aac3a315c4ede46e62e40b2722372d097" title="Return the average implantation depth." alt="" coords="5,85,223,141"/>
+<area shape="rect" id="node5" href="$classtriumf_1_1bnmr_1_1srf_1_1nonlocal_1_1DepthResolvedAnalyzer.html#a090d1db40b6da4a343f6a060ee376a71" title="Return the average implantation depth." alt="" coords="7,165,221,221"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#aab64f016dc8f9d09862037131b0b5835" title="Find the reduced gap Delta(t) for a given reduced temperature x = T / T_c." alt="" coords="29,289,199,330"/>
+<area shape="rect" id="node15" href="$namespacetriumf_1_1srim_1_1pdf.html#a5ed0841444d832b681a8b7dd791ae5dc" title="see Eq. (5.6) in Md Masrur Hossain&#39;s MSc thesis, UBC, 2006, p. 52." alt="" coords="56,503,172,545"/>
+<area shape="rect" id="node16" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a52677dc929ccf6d21c8ffc1b0283f379" title="depth&#45;averaging using numeric integration" alt="" coords="18,568,210,624"/>
+<area shape="rect" id="node17" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer.html#a6b633f5ef7fa65934abb61df00302441" title="depth&#45;averaging using numeric integration" alt="" coords="5,648,223,704"/>
+<area shape="rect" id="node18" href="$namespacetriumf_1_1bnmr_1_1slr.html#a37e5a75438f0766d626f818bdede9948" title="pulsed stretched exponential integral (from 0 to time_p)" alt="" coords="35,727,193,769"/>
 </map>

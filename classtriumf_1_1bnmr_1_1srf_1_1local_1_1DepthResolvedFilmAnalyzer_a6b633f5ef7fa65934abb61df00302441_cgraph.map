@@ -1,0 +1,11 @@
+<map id="triumf::bnmr::srf::local::DepthResolvedFilmAnalyzer::operator()" name="triumf::bnmr::srf::local::DepthResolvedFilmAnalyzer::operator()">
+<area shape="rect" id="node1" title="depth&#45;averaging using numeric integration" alt="" coords="5,111,223,167"/>
+<area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer.html#a275cf3b7f410be29c2a298d53ed68d2e" title="Return an interpolated alpha value." alt="" coords="286,5,503,61"/>
+<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer.html#a57669e9e48c945ddcee26ad3d5aebbec" title="Return an interpolated beta value." alt="" coords="271,85,519,126"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="329,150,460,191"/>
+<area shape="rect" id="node9" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer.html#a7bacce5595000ce73f3d660fca5e39e8" title="Return an interpolated z_max value." alt="" coords="286,215,503,271"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="567,85,729,126"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="567,150,729,191"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="567,215,729,257"/>
+<area shape="rect" id="node6" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="777,77,949,133"/>
+</map>

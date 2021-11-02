@@ -1,0 +1,7 @@
+<map id="triumf::bnmr::slr::pulsed_str_exp" name="triumf::bnmr::slr::pulsed_str_exp">
+<area shape="rect" id="node1" title="pulsed stretched exponential" alt="" coords="5,35,121,76"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="169,35,292,76"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="340,5,463,47"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="511,42,628,69"/>
+<area shape="rect" id="node5" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="676,27,848,83"/>
+</map>

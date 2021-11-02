@@ -1,0 +1,10 @@
+<map id="triumf::nmr::dipole_dipole::slr_rate" name="triumf::nmr::dipole_dipole::slr_rate">
+<area shape="rect" id="node1" title=" " alt="" coords="383,159,505,200"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#a72c4358105bed288362225a368ba8232" title="pulsed exponential integral" alt="" coords="5,12,121,53"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#a268b485511ae047482b9e6fbd613d76f" title="pulsed exponential integral (from 0 to time_p &lt;= time)" alt="" coords="184,41,320,83"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac2c6783fe1a136a249d15a2131252449" title="pulsed square exponential" alt="" coords="5,143,121,184"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1bnmr_1_1slr.html#a95199cfc0cab83df8fd67df54ba6a040" title="pulsed square exponential integral (from 0 to time_p &lt;= time)" alt="" coords="173,159,331,200"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1bnmr_1_1slr.html#abb325909610a0f28c7807dd1edb9458d" title="pulsed square root exponential" alt="" coords="5,233,121,275"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1bnmr_1_1slr.html#aa5fdfafb921a780cc13163586983a3b1" title="pulsed square root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="169,276,335,317"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac1e9547b99eb550fbf3d682a413379a5" title="pulsed stretched exponential" alt="" coords="194,341,310,383"/>
+</map>

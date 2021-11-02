@@ -22,10 +22,11 @@ var searchData=
   ['pdf_19',['pdf',['../namespacetriumf_1_1srim_1_1pdf.html',1,'triumf::srim']]],
   ['phenomenology_20',['phenomenology',['../namespacetriumf_1_1superconductivity_1_1phenomenology.html',1,'triumf::superconductivity']]],
   ['pippard_21',['pippard',['../namespacetriumf_1_1superconductivity_1_1pippard.html',1,'triumf::superconductivity']]],
-  ['srf_22',['srf',['../namespacetriumf_1_1bnmr_1_1srf.html',1,'triumf::bnmr']]],
-  ['srim_23',['srim',['../namespacetriumf_1_1srim.html',1,'triumf']]],
-  ['statistical_5fmechanics_24',['statistical_mechanics',['../namespacetriumf_1_1statistical__mechanics.html',1,'triumf']]],
-  ['superconductivity_25',['superconductivity',['../namespacetriumf_1_1superconductivity.html',1,'triumf']]],
-  ['triumf_26',['triumf',['../namespacetriumf.html',1,'']]],
-  ['utilities_27',['utilities',['../namespacetriumf_1_1nmr_1_1utilities.html',1,'triumf::nmr']]]
+  ['slr_22',['slr',['../namespacetriumf_1_1bnmr_1_1slr.html',1,'triumf::bnmr']]],
+  ['srf_23',['srf',['../namespacetriumf_1_1bnmr_1_1srf.html',1,'triumf::bnmr']]],
+  ['srim_24',['srim',['../namespacetriumf_1_1srim.html',1,'triumf']]],
+  ['statistical_5fmechanics_25',['statistical_mechanics',['../namespacetriumf_1_1statistical__mechanics.html',1,'triumf']]],
+  ['superconductivity_26',['superconductivity',['../namespacetriumf_1_1superconductivity.html',1,'triumf']]],
+  ['triumf_27',['triumf',['../namespacetriumf.html',1,'']]],
+  ['utilities_28',['utilities',['../namespacetriumf_1_1nmr_1_1utilities.html',1,'triumf::nmr']]]
 ];

@@ -1,0 +1,9 @@
+<map id="triumf::bnmr::slr::pulsed_sqrt_exp" name="triumf::bnmr::slr::pulsed_sqrt_exp">
+<area shape="rect" id="node1" title="pulsed square root exponential" alt="" coords="5,71,121,112"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac5faacfc84dd748d64064f1d61c15f99" title="normalization for integration" alt="" coords="194,5,310,47"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#aa5fdfafb921a780cc13163586983a3b1" title="pulsed square root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="169,71,335,112"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="383,100,505,141"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="553,71,676,112"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="724,107,841,134"/>
+<area shape="rect" id="node7" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="889,93,1061,149"/>
+</map>
