@@ -10,7 +10,12 @@ facility.
 - [Boost] : A set of high-quality, peer-reviewed, free and portable [C++] libraries.
 - [ROOT] : An open-source data analysis framework used by high energy physics and others. 
 
+## Documentation
 
+Some documentation of the source code (generated via [Doxygen])
+can be found at: <https://rmlmcfadden.github.io/triumfpp/>.
+
+[Doxygen]: https://www.doxygen.nl/
 [ROOT]: https://root.cern/
 [Boost]: https://boost.org/
 [TRIUMF]: https://triumf.ca/
