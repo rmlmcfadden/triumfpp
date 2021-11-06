@@ -1,0 +1,6 @@
+<map id="triumf::statistical_mechanics::fermi_dirac::distribution" name="triumf::statistical_mechanics::fermi_dirac::distribution">
+<area shape="rect" id="node1" title=" " alt="" coords="447,57,609,113"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1math_1_1pdf.html#a7bdf509b459319b91a10769e1d68f677" title="modified beta distribution &#45; x in [0, x_max]" alt="" coords="254,5,374,47"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1math_1_1pdf.html#ace38c427ae2b2eb99d58a1357a2e8061" title="modified non&#45;central beta distribution &#45; x in [0, x_max]" alt="" coords="5,35,181,76"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1math_1_1pdf.html#af465058d642f3efeab9c705f7e1ba019" title="skew&#45;normal distribution" alt="" coords="229,123,399,164"/>
+</map>

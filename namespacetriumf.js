@@ -2,6 +2,7 @@ var namespacetriumf =
 [
     [ "bnmr", "namespacetriumf_1_1bnmr.html", "namespacetriumf_1_1bnmr" ],
     [ "constants", "namespacetriumf_1_1constants.html", "namespacetriumf_1_1constants" ],
+    [ "math", "namespacetriumf_1_1math.html", "namespacetriumf_1_1math" ],
     [ "nmr", "namespacetriumf_1_1nmr.html", "namespacetriumf_1_1nmr" ],
     [ "numpy", "namespacetriumf_1_1numpy.html", [
       [ "geomspace", "namespacetriumf_1_1numpy.html#aa674a16af67141343c29a9aa132a376d", null ],

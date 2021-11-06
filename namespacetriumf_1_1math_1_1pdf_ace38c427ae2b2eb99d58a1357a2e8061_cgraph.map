@@ -1,0 +1,6 @@
+<map id="triumf::math::pdf::modified_non_central_beta" name="triumf::math::pdf::modified_non_central_beta">
+<area shape="rect" id="node1" title="modified non&#45;central beta distribution &#45; x in [0, x_max]" alt="" coords="5,13,181,54"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1statistical__mechanics_1_1fermi__dirac.html#a12962b58ee269b3097ae7e18594bcd6b" title=" " alt="" coords="397,5,560,61"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1math_1_1pdf.html#a7bdf509b459319b91a10769e1d68f677" title="modified beta distribution &#45; x in [0, x_max]" alt="" coords="229,42,349,83"/>
+<area shape="rect" id="node3" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="608,5,780,61"/>
+</map>
