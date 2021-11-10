@@ -115,6 +115,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a93c841f867e2aba00a495f90d109393d"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetriumf_1_1bnmr_1_1slr.html#a93c841f867e2aba00a495f90d109393d">pulsed_exp</a> (const T *x, const T *par)</td></tr>
 <tr class="memdesc:a93c841f867e2aba00a495f90d109393d"><td class="mdescLeft">&#160;</td><td class="mdescRight">pulsed exponential integral (ROOT)  <a href="namespacetriumf_1_1bnmr_1_1slr.html#a93c841f867e2aba00a495f90d109393d">More...</a><br /></td></tr>
 <tr class="separator:a93c841f867e2aba00a495f90d109393d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412a035a8a73b65e9c037147a239a5e1"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
+<tr class="memitem:a412a035a8a73b65e9c037147a239a5e1"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetriumf_1_1bnmr_1_1slr.html#a412a035a8a73b65e9c037147a239a5e1">pulsed_mod_str_exp_integral</a> (T time, T time_p, T nuclear_lifetime, T slr_rate_initial, T slr_rate, T beta)</td></tr>
+<tr class="separator:a412a035a8a73b65e9c037147a239a5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf136ccbc56f23c561a960a3a1b2f9a"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
+<tr class="memitem:aeaf136ccbc56f23c561a960a3a1b2f9a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetriumf_1_1bnmr_1_1slr.html#aeaf136ccbc56f23c561a960a3a1b2f9a">pulsed_mod_str_exp</a> (T time, T nuclear_lifetime, T pulse_length, T asymmetry, T slr_rate_initial, T slr_rate, T beta)</td></tr>
+<tr class="separator:aeaf136ccbc56f23c561a960a3a1b2f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c85a7f5c2e45df66b9847e77891d65"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
+<tr class="memitem:a34c85a7f5c2e45df66b9847e77891d65"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetriumf_1_1bnmr_1_1slr.html#a34c85a7f5c2e45df66b9847e77891d65">pulsed_mod_str_exp</a> (const T *x, const T *par)</td></tr>
+<tr class="separator:a34c85a7f5c2e45df66b9847e77891d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95199cfc0cab83df8fd67df54ba6a040"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
 <tr class="memitem:a95199cfc0cab83df8fd67df54ba6a040"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetriumf_1_1bnmr_1_1slr.html#a95199cfc0cab83df8fd67df54ba6a040">pulsed_sq_exp_integral</a> (T time, T time_p, T nuclear_lifetime, T slr_rate)</td></tr>
 <tr class="memdesc:a95199cfc0cab83df8fd67df54ba6a040"><td class="mdescLeft">&#160;</td><td class="mdescRight">pulsed square exponential integral (from 0 to time_p &lt;= time)  <a href="namespacetriumf_1_1bnmr_1_1slr.html#a95199cfc0cab83df8fd67df54ba6a040">More...</a><br /></td></tr>
@@ -471,6 +480,192 @@ template&lt;typename T  = double&gt; </div>
 
 </div>
 </div>
+<a id="a34c85a7f5c2e45df66b9847e77891d65" name="a34c85a7f5c2e45df66b9847e77891d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c85a7f5c2e45df66b9847e77891d65">&#9670;&nbsp;</a></span>pulsed_mod_str_exp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T triumf::bnmr::slr::pulsed_mod_str_exp </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>par</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >pulsed modified stretched exponential (ROOT) <a href="https://doi.org/10.1006/jmra.1996.0029">https://doi.org/10.1006/jmra.1996.0029</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="mod__str__exp_8hpp_source.html#l00065">65</a> of file <a class="el" href="mod__str__exp_8hpp_source.html">mod_str_exp.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aeaf136ccbc56f23c561a960a3a1b2f9a" name="aeaf136ccbc56f23c561a960a3a1b2f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf136ccbc56f23c561a960a3a1b2f9a">&#9670;&nbsp;</a></span>pulsed_mod_str_exp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T triumf::bnmr::slr::pulsed_mod_str_exp </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>nuclear_lifetime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>pulse_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>asymmetry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>slr_rate_initial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>slr_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>beta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >pulsed modified stretched exponential <a href="https://doi.org/10.1006/jmra.1996.0029">https://doi.org/10.1006/jmra.1996.0029</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="mod__str__exp_8hpp_source.html#l00043">43</a> of file <a class="el" href="mod__str__exp_8hpp_source.html">mod_str_exp.hpp</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_aeaf136ccbc56f23c561a960a3a1b2f9a_cgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_aeaf136ccbc56f23c561a960a3a1b2f9a_cgraph" alt=""/></div>
+<map name="anamespacetriumf_1_1bnmr_1_1slr_aeaf136ccbc56f23c561a960a3a1b2f9a_cgraph" id="anamespacetriumf_1_1bnmr_1_1slr_aeaf136ccbc56f23c561a960a3a1b2f9a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,147,76"/>
+<area shape="rect" href="namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="195,35,317,76"/>
+<area shape="rect" href="namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="365,5,488,47"/>
+<area shape="rect" href="namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="536,42,653,69"/>
+<area shape="rect" href="structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="701,27,873,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a412a035a8a73b65e9c037147a239a5e1" name="a412a035a8a73b65e9c037147a239a5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412a035a8a73b65e9c037147a239a5e1">&#9670;&nbsp;</a></span>pulsed_mod_str_exp_integral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T triumf::bnmr::slr::pulsed_mod_str_exp_integral </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>time_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>nuclear_lifetime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>slr_rate_initial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>slr_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>beta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >pulsed modified stretched exponential integral (from 0 to time_p) <a href="https://doi.org/10.1006/jmra.1996.0029">https://doi.org/10.1006/jmra.1996.0029</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="mod__str__exp_8hpp_source.html#l00020">20</a> of file <a class="el" href="mod__str__exp_8hpp_source.html">mod_str_exp.hpp</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_a412a035a8a73b65e9c037147a239a5e1_cgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_a412a035a8a73b65e9c037147a239a5e1_cgraph" alt=""/></div>
+<map name="anamespacetriumf_1_1bnmr_1_1slr_a412a035a8a73b65e9c037147a239a5e1_cgraph" id="anamespacetriumf_1_1bnmr_1_1slr_a412a035a8a73b65e9c037147a239a5e1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,186,196,228"/>
+<area shape="rect" href="namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="244,64,375,105"/>
+<area shape="rect" href="namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="248,186,371,228"/>
+<area shape="rect" href="namespacetriumf_1_1nmr.html#a9d62d2067eea2287447ed64d9f9855ac" title=" " alt="" coords="654,248,775,275"/>
+<area shape="rect" href="namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="633,45,796,86"/>
+<area shape="rect" href="namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="423,30,585,72"/>
+<area shape="rect" href="namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="423,96,585,137"/>
+<area shape="rect" href="structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="844,168,1016,224"/>
+<area shape="rect" href="namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="443,161,565,202"/>
+<area shape="rect" href="namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="656,183,773,210"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a2cca79dd7172cc1691dd1d51499f9d43" name="a2cca79dd7172cc1691dd1d51499f9d43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2cca79dd7172cc1691dd1d51499f9d43">&#9670;&nbsp;</a></span>pulsed_sq_exp() <span class="overload">[1/2]</span></h2>
 
@@ -554,11 +749,11 @@ template&lt;typename T  = double&gt; </div>
 <p>pulsed square exponential </p>
 
 <p class="definition">Definition at line <a class="el" href="sq__exp_8hpp_source.html#l00037">37</a> of file <a class="el" href="sq__exp_8hpp_source.html">sq_exp.hpp</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_ac2c6783fe1a136a249d15a2131252449_cgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_ac2c6783fe1a136a249d15a2131252449_cgraph" alt=""/></div>
 <map name="anamespacetriumf_1_1bnmr_1_1slr_ac2c6783fe1a136a249d15a2131252449_cgraph" id="anamespacetriumf_1_1bnmr_1_1slr_ac2c6783fe1a136a249d15a2131252449_cgraph">
 <area shape="rect" title="pulsed square exponential" alt="" coords="5,71,121,112"/>
@@ -616,11 +811,11 @@ template&lt;typename T  = double&gt; </div>
 <p>pulsed square exponential integral (from 0 to time_p &lt;= time) </p>
 
 <p class="definition">Definition at line <a class="el" href="sq__exp_8hpp_source.html#l00019">19</a> of file <a class="el" href="sq__exp_8hpp_source.html">sq_exp.hpp</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_a95199cfc0cab83df8fd67df54ba6a040_cgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_a95199cfc0cab83df8fd67df54ba6a040_cgraph" alt=""/></div>
 <map name="anamespacetriumf_1_1bnmr_1_1slr_a95199cfc0cab83df8fd67df54ba6a040_cgraph" id="anamespacetriumf_1_1bnmr_1_1slr_a95199cfc0cab83df8fd67df54ba6a040_cgraph">
 <area shape="rect" title="pulsed square exponential integral (from 0 to time_p &lt;= time)" alt="" coords="5,35,163,76"/>
@@ -630,11 +825,11 @@ template&lt;typename T  = double&gt; </div>
 <area shape="rect" href="structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="717,27,889,83"/>
 </map>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_a95199cfc0cab83df8fd67df54ba6a040_icgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_a95199cfc0cab83df8fd67df54ba6a040_icgraph" alt=""/></div>
 <map name="anamespacetriumf_1_1bnmr_1_1slr_a95199cfc0cab83df8fd67df54ba6a040_icgraph" id="anamespacetriumf_1_1bnmr_1_1slr_a95199cfc0cab83df8fd67df54ba6a040_icgraph">
 <area shape="rect" title="pulsed square exponential integral (from 0 to time_p &lt;= time)" alt="" coords="169,5,327,47"/>
@@ -727,11 +922,11 @@ template&lt;typename T  = double&gt; </div>
 <p>pulsed square root exponential </p>
 
 <p class="definition">Definition at line <a class="el" href="sqrt__exp_8hpp_source.html#l00047">47</a> of file <a class="el" href="sqrt__exp_8hpp_source.html">sqrt_exp.hpp</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_abb325909610a0f28c7807dd1edb9458d_cgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_abb325909610a0f28c7807dd1edb9458d_cgraph" alt=""/></div>
 <map name="anamespacetriumf_1_1bnmr_1_1slr_abb325909610a0f28c7807dd1edb9458d_cgraph" id="anamespacetriumf_1_1bnmr_1_1slr_abb325909610a0f28c7807dd1edb9458d_cgraph">
 <area shape="rect" title="pulsed square root exponential" alt="" coords="5,71,121,112"/>
@@ -789,11 +984,11 @@ template&lt;typename T  = double&gt; </div>
 <p>pulsed square root exponential integral (from 0 to time_p &lt;= time) </p>
 
 <p class="definition">Definition at line <a class="el" href="sqrt__exp_8hpp_source.html#l00020">20</a> of file <a class="el" href="sqrt__exp_8hpp_source.html">sqrt_exp.hpp</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_aa5fdfafb921a780cc13163586983a3b1_cgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_aa5fdfafb921a780cc13163586983a3b1_cgraph" alt=""/></div>
 <map name="anamespacetriumf_1_1bnmr_1_1slr_aa5fdfafb921a780cc13163586983a3b1_cgraph" id="anamespacetriumf_1_1bnmr_1_1slr_aa5fdfafb921a780cc13163586983a3b1_cgraph">
 <area shape="rect" title="pulsed square root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="5,35,171,76"/>
@@ -803,11 +998,11 @@ template&lt;typename T  = double&gt; </div>
 <area shape="rect" href="structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="725,27,897,83"/>
 </map>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_aa5fdfafb921a780cc13163586983a3b1_icgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_aa5fdfafb921a780cc13163586983a3b1_icgraph" alt=""/></div>
 <map name="anamespacetriumf_1_1bnmr_1_1slr_aa5fdfafb921a780cc13163586983a3b1_icgraph" id="anamespacetriumf_1_1bnmr_1_1slr_aa5fdfafb921a780cc13163586983a3b1_icgraph">
 <area shape="rect" title="pulsed square root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="169,5,335,47"/>
@@ -906,11 +1101,11 @@ template&lt;typename T  = double&gt; </div>
 <p>pulsed stretched exponential </p>
 
 <p class="definition">Definition at line <a class="el" href="str__exp_8hpp_source.html#l00035">35</a> of file <a class="el" href="str__exp_8hpp_source.html">str_exp.hpp</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_ac1e9547b99eb550fbf3d682a413379a5_cgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_ac1e9547b99eb550fbf3d682a413379a5_cgraph" alt=""/></div>
 <map name="anamespacetriumf_1_1bnmr_1_1slr_ac1e9547b99eb550fbf3d682a413379a5_cgraph" id="anamespacetriumf_1_1bnmr_1_1slr_ac1e9547b99eb550fbf3d682a413379a5_cgraph">
 <area shape="rect" title="pulsed stretched exponential" alt="" coords="5,35,121,76"/>
@@ -972,11 +1167,11 @@ template&lt;typename T  = double&gt; </div>
 <p>pulsed stretched exponential integral (from 0 to time_p) </p>
 
 <p class="definition">Definition at line <a class="el" href="str__exp_8hpp_source.html#l00019">19</a> of file <a class="el" href="str__exp_8hpp_source.html">str_exp.hpp</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="namespacetriumf_1_1bnmr_1_1slr_a37e5a75438f0766d626f818bdede9948_cgraph.png" border="0" usemap="#anamespacetriumf_1_1bnmr_1_1slr_a37e5a75438f0766d626f818bdede9948_cgraph" alt=""/></div>
 <map name="anamespacetriumf_1_1bnmr_1_1slr_a37e5a75438f0766d626f818bdede9948_cgraph" id="anamespacetriumf_1_1bnmr_1_1slr_a37e5a75438f0766d626f818bdede9948_cgraph">
 <area shape="rect" title="pulsed stretched exponential integral (from 0 to time_p)" alt="" coords="5,78,164,119"/>

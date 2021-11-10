@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pdf_2ehpp_0',['pdf.hpp',['../math_2pdf_8hpp.html',1,'(Global Namespace)'],['../srim_2pdf_8hpp.html',1,'(Global Namespace)']]],
-  ['phenomenology_2ehpp_1',['phenomenology.hpp',['../phenomenology_8hpp.html',1,'']]],
-  ['pippard_2ehpp_2',['pippard.hpp',['../pippard_8hpp.html',1,'']]]
+  ['nonlocal_2ehpp_0',['nonlocal.hpp',['../nonlocal_8hpp.html',1,'']]],
+  ['nuclei_2ehpp_1',['nuclei.hpp',['../bnmr_2nuclei_8hpp.html',1,'(Global Namespace)'],['../nmr_2nuclei_8hpp.html',1,'(Global Namespace)']]],
+  ['numpy_2ehpp_2',['numpy.hpp',['../numpy_8hpp.html',1,'']]]
 ];
