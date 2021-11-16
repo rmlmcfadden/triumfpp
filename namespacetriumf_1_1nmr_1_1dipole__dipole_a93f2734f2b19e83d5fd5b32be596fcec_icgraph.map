@@ -1,12 +1,15 @@
 <map id="triumf::nmr::dipole_dipole::slr_rate" name="triumf::nmr::dipole_dipole::slr_rate">
-<area shape="rect" id="node1" title=" " alt="" coords="408,237,531,279"/>
-<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#a72c4358105bed288362225a368ba8232" title="pulsed exponential integral" alt="" coords="5,19,121,60"/>
-<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#a268b485511ae047482b9e6fbd613d76f" title="pulsed exponential integral (from 0 to time_p &lt;= time)" alt="" coords="197,48,333,89"/>
-<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1slr.html#aeaf136ccbc56f23c561a960a3a1b2f9a" title=" " alt="" coords="194,113,335,155"/>
-<area shape="rect" id="node5" href="$namespacetriumf_1_1bnmr_1_1slr.html#a412a035a8a73b65e9c037147a239a5e1" title=" " alt="" coords="169,179,360,220"/>
-<area shape="rect" id="node6" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac2c6783fe1a136a249d15a2131252449" title="pulsed square exponential" alt="" coords="5,280,121,321"/>
-<area shape="rect" id="node7" href="$namespacetriumf_1_1bnmr_1_1slr.html#a95199cfc0cab83df8fd67df54ba6a040" title="pulsed square exponential integral (from 0 to time_p &lt;= time)" alt="" coords="186,296,343,337"/>
-<area shape="rect" id="node8" href="$namespacetriumf_1_1bnmr_1_1slr.html#abb325909610a0f28c7807dd1edb9458d" title="pulsed square root exponential" alt="" coords="5,371,121,412"/>
-<area shape="rect" id="node9" href="$namespacetriumf_1_1bnmr_1_1slr.html#aa5fdfafb921a780cc13163586983a3b1" title="pulsed square root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="182,413,347,455"/>
-<area shape="rect" id="node10" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac1e9547b99eb550fbf3d682a413379a5" title="pulsed stretched exponential" alt="" coords="207,479,323,520"/>
+<area shape="rect" id="node1" title=" " alt="" coords="408,328,531,370"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#a3953e20fd814c2ab24ca0358fcaf22bf" title="pulsed cube root exponential" alt="" coords="5,22,121,63"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#adb278bcf32d15027fe68db03f4318260" title="pulsed cube root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="182,51,347,92"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1slr.html#a72c4358105bed288362225a368ba8232" title="pulsed exponential integral" alt="" coords="5,139,121,180"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1bnmr_1_1slr.html#a268b485511ae047482b9e6fbd613d76f" title="pulsed exponential integral (from 0 to time_p &lt;= time)" alt="" coords="197,168,333,210"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1bnmr_1_1slr.html#aeaf136ccbc56f23c561a960a3a1b2f9a" title=" " alt="" coords="194,234,335,275"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1bnmr_1_1slr.html#a412a035a8a73b65e9c037147a239a5e1" title=" " alt="" coords="169,299,360,340"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac2c6783fe1a136a249d15a2131252449" title="pulsed square exponential" alt="" coords="5,400,121,442"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1bnmr_1_1slr.html#a95199cfc0cab83df8fd67df54ba6a040" title="pulsed square exponential integral (from 0 to time_p &lt;= time)" alt="" coords="186,416,343,458"/>
+<area shape="rect" id="node10" href="$namespacetriumf_1_1bnmr_1_1slr.html#abb325909610a0f28c7807dd1edb9458d" title="pulsed square root exponential" alt="" coords="5,491,121,532"/>
+<area shape="rect" id="node11" href="$namespacetriumf_1_1bnmr_1_1slr.html#aa5fdfafb921a780cc13163586983a3b1" title="pulsed square root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="182,534,347,575"/>
+<area shape="rect" id="node12" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac1e9547b99eb550fbf3d682a413379a5" title="pulsed stretched exponential" alt="" coords="207,599,323,640"/>
+<area shape="rect" id="node13" href="$namespacetriumf_1_1bnmr_1_1slr.html#a37e5a75438f0766d626f818bdede9948" title="pulsed stretched exponential integral (from 0 to time_p)" alt="" coords="185,664,344,706"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="triumf::bnmr::slr::normalization" name="triumf::bnmr::slr::normalization">
-<area shape="rect" id="node1" title="normalization for integration" alt="" coords="169,71,285,112"/>
-<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#a72c4358105bed288362225a368ba8232" title="pulsed exponential integral" alt="" coords="5,5,121,47"/>
-<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac2c6783fe1a136a249d15a2131252449" title="pulsed square exponential" alt="" coords="5,71,121,112"/>
-<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1slr.html#abb325909610a0f28c7807dd1edb9458d" title="pulsed square root exponential" alt="" coords="5,136,121,177"/>
+<area shape="rect" id="node1" title="normalization for integration" alt="" coords="169,104,285,145"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#a3953e20fd814c2ab24ca0358fcaf22bf" title="pulsed cube root exponential" alt="" coords="5,5,121,47"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#a72c4358105bed288362225a368ba8232" title="pulsed exponential integral" alt="" coords="5,71,121,112"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac2c6783fe1a136a249d15a2131252449" title="pulsed square exponential" alt="" coords="5,136,121,177"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1bnmr_1_1slr.html#abb325909610a0f28c7807dd1edb9458d" title="pulsed square root exponential" alt="" coords="5,201,121,243"/>
 </map>

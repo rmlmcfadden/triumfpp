@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('str__exp_8hpp_source.html',''); initRe
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="comment">// integrand for the numeric integral</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">auto</span> <a class="code hl_function" href="namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec">integrand</a> = [=](T t_p) {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> std::exp(-(time - t_p) / nuclear_lifetime) *</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>           std::exp(-std::pow(time - t_p, beta));</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>           std::exp(-std::pow(<a class="code hl_function" href="namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec">slr_rate</a> * (time - t_p), beta));</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  };</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="comment">// create the integrator for tanh-sinh quadrature</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">static</span> boost::math::quadrature::tanh_sinh&lt;T&gt; integrator;</div>

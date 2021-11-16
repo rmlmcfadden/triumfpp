@@ -1,7 +1,11 @@
 <map id="triumf::bnmr::slr::pulsed_sqrt_exp_integral" name="triumf::bnmr::slr::pulsed_sqrt_exp_integral">
-<area shape="rect" id="node1" title="pulsed square root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="5,35,171,76"/>
-<area shape="rect" id="node2" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="219,35,341,76"/>
-<area shape="rect" id="node3" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="389,5,512,47"/>
-<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="560,42,677,69"/>
-<area shape="rect" id="node5" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="725,27,897,83"/>
+<area shape="rect" id="node1" title="pulsed square root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="5,128,171,170"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="219,63,349,104"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="223,160,345,202"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="608,36,771,78"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="397,30,560,71"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="397,95,560,136"/>
+<area shape="rect" id="node4" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="819,124,991,180"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="417,160,540,202"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="631,168,748,194"/>
 </map>

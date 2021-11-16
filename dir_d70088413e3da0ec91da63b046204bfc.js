@@ -1,6 +1,7 @@
 var dir_d70088413e3da0ec91da63b046204bfc =
 [
     [ "bi_exp.hpp", "bi__exp_8hpp.html", "bi__exp_8hpp" ],
+    [ "cbrt_exp.hpp", "cbrt__exp_8hpp.html", "cbrt__exp_8hpp" ],
     [ "common.hpp", "common_8hpp.html", "common_8hpp" ],
     [ "exp.hpp", "exp_8hpp.html", "exp_8hpp" ],
     [ "mod_str_exp.hpp", "mod__str__exp_8hpp.html", "mod__str__exp_8hpp" ],
