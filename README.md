@@ -3,6 +3,8 @@
 triumf++ is a collection of [C++] routines aimed at aiding the analysis of
 condensed matter experiments ([μSR] and [β-NMR]) performed at [TRIUMF]'s [CMMS]
 facility.
+The source code for the collection can be found at:
+<https://github.com/rmlmcfadden/triumfpp>
 
 ## Requirements
 
