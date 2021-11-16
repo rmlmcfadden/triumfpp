@@ -1,7 +1,8 @@
 #ifndef TRIUMF_BNMR_SLR_SQRT_EXP_HPP
 #define TRIUMF_BNMR_SLR_SQRT_EXP_HPP
 
-#include <boost/math/quadrature/tanh_sinh.hpp>
+#include <boost/math/constants/constants.hpp>
+#include <boost/math/special_functions/gamma.hpp>
 #include <cmath>
 #include <triumf/bnmr/slr/common.hpp>
 
@@ -19,16 +20,26 @@ template <typename T = double>
 T pulsed_sqrt_exp_integral(T time, T time_p, T nuclear_lifetime, T slr_rate) {
   // make sure that
   assert(time >= time_p);
-  // integrand for the numeric integral
-  auto integrand = [=](T t_p) {
-    return std::exp(-(time - t_p) / nuclear_lifetime) *
-           std::exp(-std::sqrt(slr_rate * (time - t_p)));
-  };
-  // create the integrator for tanh-sinh quadrature
-  static boost::math::quadrature::tanh_sinh<T> integrator;
-  // evaluate the integral from 0 to time_p
-  T Q = integrator.integrate(integrand, 0.0, time_p);
-  return Q;
+
+  // simplify the arguments
+  T arg_1 = (slr_rate * nuclear_lifetime * nuclear_lifetime +
+             4.0 * std::sqrt((time - time_p) * slr_rate) * nuclear_lifetime +
+             4.0 * (time - time_p)) /
+            (4.0 * nuclear_lifetime);
+  T arg_2 = (slr_rate * nuclear_lifetime * nuclear_lifetime +
+             4.0 * std::sqrt(time * slr_rate) * nuclear_lifetime + 4.0 * time) /
+            (4.0 * nuclear_lifetime);
+  T exp_1 = std::pow(slr_rate * nuclear_lifetime, 1.5) *
+            std::exp(slr_rate * nuclear_lifetime / 4) / (2.0 * slr_rate);
+  T exp_2 = std::pow(slr_rate * nuclear_lifetime, 1.5) *
+            std::exp(slr_rate * nuclear_lifetime / 4);
+
+  // return the result in terms of the full (non-normalized) upper incomplete
+  // gamma function
+  return -boost::math::tgamma(0.5, arg_1) * exp_1 +
+         boost::math::tgamma(0.5, arg_2) * exp_1 +
+         boost::math::tgamma(1.0, arg_1) * exp_2 -
+         boost::math::tgamma(1.0, arg_2) * exp_2;
 }
 
 /// pulsed square root exponential
