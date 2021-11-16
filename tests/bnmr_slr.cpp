@@ -4,6 +4,7 @@
 #include <cmath>
 #include <triumf/bnmr/nuclei.hpp>
 #include <triumf/bnmr/slr/bi_exp.hpp>
+#include <triumf/bnmr/slr/cbrt_exp.hpp>
 #include <triumf/bnmr/slr/exp.hpp>
 #include <triumf/bnmr/slr/mod_str_exp.hpp>
 #include <triumf/bnmr/slr/sq_exp.hpp>
@@ -75,6 +76,28 @@ BOOST_AUTO_TEST_CASE_TEMPLATE(pulsed_sqrt_exp, T, test_types) {
   //
   for (auto &time : triumf::numpy::linspace<T>(0.0, 16.0, 100)) {
     BOOST_TEST(triumf::bnmr::slr::pulsed_sqrt_exp<T>(
+                   time, nuclear_lifetime, pulse_length, initial_asymmetry,
+                   slr_rate) <= initial_asymmetry);
+  }
+}
+
+//
+BOOST_AUTO_TEST_CASE_TEMPLATE(pulsed_cbrt_exp, T, test_types) {
+  //
+  constexpr T pulse_length = 4.0;
+  constexpr T nuclear_lifetime = triumf::bnmr::nuclei::lithium_8<T>::lifetime();
+  constexpr T initial_asymmetry = 1.0;
+  constexpr T slr_rate = 1.0;
+  //
+  BOOST_TEST(triumf::bnmr::slr::pulsed_cbrt_exp<T>(
+                 -1.0, nuclear_lifetime, pulse_length, initial_asymmetry,
+                 slr_rate) == 0.0);
+  BOOST_TEST(triumf::bnmr::slr::pulsed_cbrt_exp<T>(
+                 0.0, nuclear_lifetime, pulse_length, initial_asymmetry,
+                 slr_rate) == initial_asymmetry);
+  //
+  for (auto &time : triumf::numpy::linspace<T>(0.0, 16.0, 100)) {
+    BOOST_TEST(triumf::bnmr::slr::pulsed_cbrt_exp<T>(
                    time, nuclear_lifetime, pulse_length, initial_asymmetry,
                    slr_rate) <= initial_asymmetry);
   }
