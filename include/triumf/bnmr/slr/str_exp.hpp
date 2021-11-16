@@ -21,7 +21,7 @@ T pulsed_str_exp_integral(T time, T time_p, T nuclear_lifetime, T slr_rate,
   // integrand for the numeric integral
   auto integrand = [=](T t_p) {
     return std::exp(-(time - t_p) / nuclear_lifetime) *
-           std::exp(-std::pow(time - t_p, beta));
+           std::exp(-std::pow(slr_rate * (time - t_p), beta));
   };
   // create the integrator for tanh-sinh quadrature
   static boost::math::quadrature::tanh_sinh<T> integrator;
