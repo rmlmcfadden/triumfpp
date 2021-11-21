@@ -28,13 +28,13 @@ namespace bnmr {
 namespace slr {
 
 /// magnesium-31 half-life (s)
-const double T_12_31Mg = 0.235;
+const double T_12_31Mg = 0.236;
 
 /// aluminum-31 half-life (s)
 const double T_12_31Al = 0.644;
 
 /// silicon-31 half-life (s)
-const double T_12_31Si = 2.632 /* h */ * 60.0 /* min */ * 60.0 /* s */;
+const double T_12_31Si = 157.36 /* min */ * 60.0 /* s min^-1 */;
 
 /// phosphorus-31 half-life (s)
 const double T_12_31P = std::numeric_limits<double>::infinity();
