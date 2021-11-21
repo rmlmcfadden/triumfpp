@@ -10,8 +10,8 @@
 // http://maxima.sourceforge.net/
 //
 
-#ifndef TRIUMF_BNMR_SLR_31MG_DECAY_HPP
-#define TRIUMF_BNMR_SLE_31MG_DECAY_HPP
+#ifndef TRIUMF_BNMR_SLR_MAGNESIUM_31_DECAY_CORRECTIONS_HPP
+#define TRIUMF_BNMR_SLR_MAGNESIUM_31_DECAY_CORRECTIONS_HPP
 
 #include <cmath>
 #include <limits>
@@ -24,6 +24,9 @@ namespace bnmr {
 
 // spin-lattice relaxation (SLR)
 namespace slr {
+
+// magnesium-31
+namespace magnesium_31 {
 
 /// magnesium-31 half-life (s)
 const double T_12_31Mg = 0.236;
@@ -510,10 +513,12 @@ double fa_30Si(double time, double beam_pulse, double beam_rate) {
          a_total(time, beam_pulse, beam_rate);
 }
 
+} // namespace magnesium_31
+
 } // namespace slr
 
 } // namespace bnmr
 
 } // namespace triumf
 
-#endif // TRIUMF_BNMR_SLR_31MG_DECAY_HPP
+#endif // TRIUMF_BNMR_SLR_MAGNESIUM_31_DECAY_CORRECTIONS_HPP

@@ -1,8 +1,8 @@
-#ifndef TRIUMF_BNMR_SLR_31MG_EXP_HPP
-#define TRIUMF_BNMR_SLR_31MG_EXP_HPP
+#ifndef TRIUMF_BNMR_SLR_MAGNESIUM_31_EXP_HPP
+#define TRIUMF_BNMR_SLR_MAGNESIUM_31_EXP_HPP
 
-#include <triumf/bnmr/slr/31mg_decay.hpp>
 #include <triumf/bnmr/slr/exp.hpp>
+#include <triumf/bnmr/slr/magnesium_31/decay_corrections.hpp>
 
 // TRIUMF: Canada's particle accelerator centre
 namespace triumf {
@@ -13,9 +13,12 @@ namespace bnmr {
 // spin-lattice relaxation (SLR)
 namespace slr {
 
-/// pulsed exponential with magensium-31 decay corrections
+// magnesium-31
+namespace magnesium_31 {
+
+/// pulsed exponential with magnesium-31 decay corrections
 template <typename T = double>
-T pulsed_exp_31Mg(T time, T nuclear_lifetime, T pulse_length, T asymmetry,
+T pulsed_exp(T time, T nuclear_lifetime, T pulse_length, T asymmetry,
                   T slr_rate) {
   double beam_pulse = 1e6;
   return fa_31Mg(time, pulse_length, beam_rate) *
@@ -23,10 +26,12 @@ T pulsed_exp_31Mg(T time, T nuclear_lifetime, T pulse_length, T asymmetry,
                        slr_rate);
 }
 
-/// pulsed exponential with magensium-31 decay corrections (ROOT)
+/// pulsed exponential with magnesium-31 decay corrections (ROOT)
 template <typename T = double> T pulsed_exp(const T *x, const T *par) {
-  return pulsed_exp_31Mg<T>(*x, par[0], par[1], par[2], par[3]);
+  return pulsed_exp<T>(*x, par[0], par[1], par[2], par[3]);
 }
+
+} // namespace magnesium_31
 
 } // namespace slr
 
@@ -34,4 +39,4 @@ template <typename T = double> T pulsed_exp(const T *x, const T *par) {
 
 } // namespace triumf
 
-#endif // TRIUMF_BNMR_SLR_31MG_EXP_HPP
+#endif // TRIUMF_BNMR_SLR_MAGNESIUM_31_EXP_HPP
