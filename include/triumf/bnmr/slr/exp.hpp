@@ -21,7 +21,7 @@ T pulsed_exp_integral(T time, T time_p, T nuclear_lifetime, T slr_rate) {
          ((slr_rate * nuclear_lifetime + 1.0) * std::exp(time * slr_rate));
 }
 
-/// pulsed exponential integral
+/// pulsed exponential
 template <typename T = double>
 T pulsed_exp(T time, T nuclear_lifetime, T pulse_length, T asymmetry,
              T slr_rate) {
@@ -42,7 +42,7 @@ T pulsed_exp(T time, T nuclear_lifetime, T pulse_length, T asymmetry,
   }
 }
 
-/// pulsed exponential integral (ROOT)
+/// pulsed exponential (ROOT)
 template <typename T = double> T pulsed_exp(const T *x, const T *par) {
   return pulsed_exp<T>(*x, par[0], par[1], par[2], par[3]);
 }
