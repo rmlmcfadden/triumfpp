@@ -13,9 +13,7 @@
 #ifndef TRIUMF_BNMR_SLR_31MG_DECAY_HPP
 #define TRIUMF_BNMR_SLE_31MG_DECAY_HPP
 
-#include <algorithm>
 #include <cmath>
-#include <iterator>
 #include <limits>
 
 // TRIUMF: Canada's particle accelerator centre
