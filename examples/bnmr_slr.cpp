@@ -4,14 +4,19 @@
 #include <triumf/bnmr/slr/cbrt_exp.hpp>
 #include <triumf/bnmr/slr/exp.hpp>
 #include <triumf/bnmr/slr/gauss_dist_exp.hpp>
+#include <triumf/bnmr/slr/magnesium_31/exp.hpp>
 #include <triumf/bnmr/slr/sq_exp.hpp>
 #include <triumf/bnmr/slr/sqrt_exp.hpp>
 #include <triumf/bnmr/slr/str_exp.hpp>
 
-//
+// for lithium-8
 constexpr double t_min = 0.0;
-constexpr double t_max = 20.0;
+constexpr double t_max = 16.0;
 constexpr double t_pulse = 4.0;
+// for magnesium-31
+constexpr double t_min_31mg = 0.0;
+constexpr double t_max_31mg = 4.0;
+constexpr double t_pulse_31mg = 1.0;
 
 //
 TF1 f_pulsed_exp("f_pulsed_exp", triumf::bnmr::slr::pulsed_exp<double>, t_min,
@@ -32,6 +37,9 @@ TF1 f_pulsed_sq_exp("f_pulsed_sq_exp", triumf::bnmr::slr::pulsed_sq_exp<double>,
 TF1 f_pulsed_gauss_dist_exp("f_pulsed_gauss_dist_exp",
                             triumf::bnmr::slr::pulsed_gauss_dist_exp<double>,
                             t_min, t_max, 5);
+TF1 f_pulsed_exp_31mg("f_pulsed_exp_31mg",
+                      triumf::bnmr::slr::magnesium_31::pulsed_exp<double>,
+                      t_min_31mg, t_max_31mg, 4);
 
 void bnmr_slr() {
 
@@ -153,4 +161,19 @@ void bnmr_slr() {
       3, 0.0, 100.0 / triumf::bnmr::nuclei::lithium_8<double>::lifetime());
   f_pulsed_gauss_dist_exp.SetParLimits(
       4, 0.00, 10.0 / triumf::bnmr::nuclei::lithium_8<double>::lifetime());
+
+  //
+  f_pulsed_exp_31mg.SetNpx(1000);
+  f_pulsed_exp_31mg.SetParName(0, "Nuclear lifetime (s)");
+  f_pulsed_exp_31mg.SetParName(1, "Pulse length (s)");
+  f_pulsed_exp_31mg.SetParName(2, "Initial asymmetry");
+  f_pulsed_exp_31mg.SetParName(3, "SLR rate (1/s)");
+  f_pulsed_exp_31mg.FixParameter(
+      0, triumf::bnmr::nuclei::magnesium_31<double>::lifetime());
+  f_pulsed_exp_31mg.FixParameter(1, t_pulse_31mg);
+  f_pulsed_exp_31mg.SetParameter(2, 0.15);
+  f_pulsed_exp_31mg.SetParameter(3, 1.0);
+  f_pulsed_exp_31mg.SetParLimits(2, 0.00, 0.30);
+  f_pulsed_exp_31mg.SetParLimits(
+      3, 0.0, 100.0 / triumf::bnmr::nuclei::magnesium_31<double>::lifetime());
 }
