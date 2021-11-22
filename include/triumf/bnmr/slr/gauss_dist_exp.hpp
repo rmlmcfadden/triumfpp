@@ -24,12 +24,21 @@ T pulsed_gauss_dist_exp_integral(T time, T time_p, T nuclear_lifetime,
   assert(time >= time_p);
   // integrand for the numeric integral
   auto integrand = [=](T t_p) {
-    return std::exp(
-        (((time * time - 2.0 * t_p * time + t_p * t_p) * sigma * sigma +
-          (2.0 * t_p - 2.0 * time) * slr_rate) *
-             nuclear_lifetime -
-         2.0 * time + 2.0 * t_p) /
-        (2.0 * nuclear_lifetime));
+    // translated from Maxima
+    T expo1 = std::exp(
+        boost::math::constants::half<T>() * time * time * sigma * sigma +
+        boost::math::constants::half<T>() * t_p * t_p * sigma * sigma +
+        t_p * slr_rate);
+    T expo2 = std::exp(-time / nuclear_lifetime + t_p / nuclear_lifetime -
+                       t_p * time * sigma * sigma);
+    T expo3 = std::exp(time * slr_rate);
+    return -expo2 *
+           (expo1 * std::erf(((time - t_p) * sigma * sigma - slr_rate) /
+                             boost::math::constants::root_two<T>() / sigma) -
+            expo1) /
+           (expo3 * std::erf(slr_rate / sigma /
+                             boost::math::constants::root_two<T>()) +
+            expo3);
   };
   // create the integrator for tanh-sinh quadrature
   static boost::math::quadrature::tanh_sinh<T> integrator;

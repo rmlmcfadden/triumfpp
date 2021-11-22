@@ -189,7 +189,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE(pulsed_gauss_dist_exp, T, test_types) {
   constexpr T initial_asymmetry = 1.0;
   constexpr T slr_rate = 1.0;
   //
-  for (const auto &sigma : triumf::numpy::logspace<T>(-3, 2, 10)) {
+  for (const auto &sigma : triumf::numpy::logspace<T>(-4.0, -1.0, 10)) {
     BOOST_TEST(triumf::bnmr::slr::pulsed_gauss_dist_exp<T>(
                    -1.0, nuclear_lifetime, pulse_length, initial_asymmetry,
                    slr_rate, sigma) == 0.0);
