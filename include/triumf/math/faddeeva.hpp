@@ -163,7 +163,11 @@
 
 #include <complex>
 
-namespace Faddeeva {
+namespace triumf {
+
+namespace math {
+
+namespace faddeeva {
 
 // compute w(z) = exp(-z^2) erfc(-iz) [ Faddeeva / scaled complex error func ]
 extern std::complex<double> w(std::complex<double> z,double relerr=0);
@@ -191,7 +195,11 @@ extern double erfc(double x); // special case for real x
 extern std::complex<double> Dawson(std::complex<double> z, double relerr=0);
 extern double Dawson(double x); // special case for real x
 
-} // namespace Faddeeva
+} // namespace faddeeva
+
+} // namespace math
+
+} // namespace triumf
 
 #endif // FADDEEVA_HH
 
@@ -214,8 +222,8 @@ typedef complex<double> cmplx;
 
 #  define C(a,b) cmplx(a,b)
 
-#  define FADDEEVA(name) Faddeeva::name
-#  define FADDEEVA_RE(name) Faddeeva::name
+#  define FADDEEVA(name) triumf::math::faddeeva::name
+#  define FADDEEVA_RE(name) triumf::math::faddeeva::name
 
 // isnan/isinf were introduced in C++11
 #  if (__cplusplus < 201103L) && (!defined(HAVE_ISNAN) || !defined(HAVE_ISINF))
