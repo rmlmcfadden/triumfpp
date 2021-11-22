@@ -1,5 +1,5 @@
 <map id="triumf::bnmr::slr::pulsed_exp" name="triumf::bnmr::slr::pulsed_exp">
-<area shape="rect" id="node1" title="pulsed exponential integral" alt="" coords="5,71,121,112"/>
+<area shape="rect" id="node1" title="pulsed exponential" alt="" coords="5,71,121,112"/>
 <area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac5faacfc84dd748d64064f1d61c15f99" title="normalization for integration" alt="" coords="179,5,295,47"/>
 <area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#a268b485511ae047482b9e6fbd613d76f" title="pulsed exponential integral (from 0 to time_p &lt;= time)" alt="" coords="169,71,305,112"/>
 <area shape="rect" id="node4" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="353,100,476,141"/>

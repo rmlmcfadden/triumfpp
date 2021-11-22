@@ -26,12 +26,14 @@ var NAVTREE =
 [
   [ "triumf++", "index.html", [
     [ "Requirements", "index.html#autotoc_md1", null ],
-    [ "Documentation", "index.html#autotoc_md2", null ],
+    [ "Organization", "index.html#autotoc_md2", null ],
+    [ "Documentation", "index.html#autotoc_md3", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ]
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -44,7 +46,13 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -52,19 +60,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"functions_s.html",
-"structtriumf_1_1constants_1_1codata__2002_1_1atomic__unit__of__electric__polarizablity.html",
-"structtriumf_1_1constants_1_1codata__2006_1_1atomic__unit__of__electric__polarizability.html",
-"structtriumf_1_1constants_1_1codata__2006_1_1lattice__spacing__of__silicon.html",
-"structtriumf_1_1constants_1_1codata__2006_1_1triton__proton__mag__mom__ratio.html",
-"structtriumf_1_1constants_1_1codata__2010_1_1electron__mass__energy__equivalent__in__MeV.html",
-"structtriumf_1_1constants_1_1codata__2010_1_1neutron__g__factor.html",
-"structtriumf_1_1constants_1_1codata__2014_1_1Planck__time.html",
-"structtriumf_1_1constants_1_1codata__2014_1_1helion__mass__energy__equivalent.html",
-"structtriumf_1_1constants_1_1codata__2014_1_1proton__molar__mass.html",
-"structtriumf_1_1constants_1_1codata__2018_1_1atomic__unit__of__mag__dipole__mom.html",
-"structtriumf_1_1constants_1_1codata__2018_1_1kelvin__joule__relationship.html",
-"structtriumf_1_1constants_1_1codata__2018_1_1tau__Compton__wavelength.html"
+"decay__corrections_8hpp.html#ae538044e89066d64156ebbd3a012ffd6",
+"namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aeaf66aab35cbebe6c0739c75769ebf89",
+"structtriumf_1_1constants_1_1codata__2002_1_1neutron__magn__moment__to__Bohr__magneton__ratio.html",
+"structtriumf_1_1constants_1_1codata__2006_1_1deuteron__rms__charge__radius.html",
+"structtriumf_1_1constants_1_1codata__2006_1_1natural__unit__of__mass.html",
+"structtriumf_1_1constants_1_1codata__2010_1_1Planck__constant__over__2__pi.html",
+"structtriumf_1_1constants_1_1codata__2010_1_1hartree__kilogram__relationship.html",
+"structtriumf_1_1constants_1_1codata__2010_1_1proton__mag__mom__to__Bohr__magneton__ratio.html",
+"structtriumf_1_1constants_1_1codata__2014_1_1atomic__unit__of__current.html",
+"structtriumf_1_1constants_1_1codata__2014_1_1kelvin__joule__relationship.html",
+"structtriumf_1_1constants_1_1codata__2014_1_1tau__muon__mass__ratio.html",
+"structtriumf_1_1constants_1_1codata__2018_1_1deuteron__relative__atomic__mass.html",
+"structtriumf_1_1constants_1_1codata__2018_1_1muon__proton__mag__mom__ratio.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">triumf++ </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_README"></a> triumf++ is a collection of <a href="https://en.cppreference.com/w/">C++</a> routines aimed at aiding the analysis of condensed matter experiments (<a href="https://en.wikipedia.org/wiki/Muon_spin_spectroscopy">μSR</a> and <a href="https://bnmr.triumf.ca">β-NMR</a>) performed at <a href="https://triumf.ca/">TRIUMF</a>'s <a href="https://cmms.triumf.ca/">CMMS</a> facility. The source code for the collection can be found at: <a href="https://github.com/rmlmcfadden/triumfpp">https://github.com/rmlmcfadden/triumfpp</a></p>
+<div class="textblock"><p ><a class="anchor" id="md_README"></a> triumf++ is a collection of <a href="https://en.cppreference.com/w/">C++</a> routines aimed at aiding the analysis of condensed matter experiments (<a href="https://en.wikipedia.org/wiki/Muon_spin_spectroscopy">μSR</a> and <a href="https://bnmr.triumf.ca">β-NMR</a>) performed at <a href="https://triumf.ca/">TRIUMF</a>'s <a href="https://cmms.triumf.ca/">CMMS</a> facility. It is designed to be header-only, in the hope that it makes the code easier to use. The source code for the collection can be found at: <a href="https://github.com/rmlmcfadden/triumfpp">https://github.com/rmlmcfadden/triumfpp</a>.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Requirements</h1>
 <ul>
@@ -95,6 +95,16 @@ Requirements</h1>
 <li>[ROOT] : An open-source data analysis framework used by high energy physics and others.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
+Organization</h1>
+<p >This repository is organized into several subdirectories:</p>
+<ul>
+<li><code>include/</code>: contains the collection's source code (all <code>.hpp</code> files).</li>
+<li><code>examples/</code>: contains several scripts/programs showcasing the use of the routines in the collection.</li>
+<li><code>scripts/</code>: contains scrips used to auto-generate some the source code (for developers only).</li>
+<li><code>tests/</code>: contains code for performing unit tests on the routines in the headers.</li>
+<li><code>tmp/</code>: contains broken/incomplete files that haven't yet been fixed or purged.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Documentation</h1>
 <p >Some documentation of the source code (generated via <a href="https://www.doxygen.nl/">Doxygen</a>) can be found at: <a href="https://rmlmcfadden.github.io/triumfpp/">https://rmlmcfadden.github.io/triumfpp/</a>. </p>
 </div></div><!-- PageDoc -->

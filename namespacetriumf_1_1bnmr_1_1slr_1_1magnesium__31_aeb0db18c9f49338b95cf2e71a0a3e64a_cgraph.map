@@ -1,0 +1,27 @@
+<map id="triumf::bnmr::slr::magnesium_31::pulsed_exp" name="triumf::bnmr::slr::magnesium_31::pulsed_exp">
+<area shape="rect" id="node1" title="pulsed exponential with magnesium&#45;31 decay corrections" alt="" coords="5,273,187,315"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a9799aac791b093656e4cedc7c2191d4f" title="fractional activity of magnesium&#45;31" alt="" coords="235,169,401,211"/>
+<area shape="rect" id="node22" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="257,339,379,380"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a2ff38ff1ec70228201faf5556d31d6fd" title="activity of magnesium&#45;31" alt="" coords="652,5,815,47"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a5b64c87c02d39a76a11c4d7756a0fd89" title="total activity of all species in the magnesium&#45;31 decay chain" alt="" coords="449,169,604,211"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3f89ce501f66e4eb599d9c6f217172af" title="number magnesium&#45;31 atoms" alt="" coords="867,5,1030,47"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a43783b4fc8cf6bfe354c1cb4d8ce248d" title="general solution to the number of magnesium&#45;31 atoms (helper function)" alt="" coords="1083,201,1245,243"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3a2823a78818a5b347f50aa25d4151b2" title="activity of aluminum&#45;30" alt="" coords="655,71,811,112"/>
+<area shape="rect" id="node10" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ab83bff85b714e624a468f18fd628c42e" title="activity of silicon&#45;30" alt="" coords="655,136,811,177"/>
+<area shape="rect" id="node14" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3225f22e3387dde94026e7c083dfbcff" title=" " alt="" coords="655,201,811,243"/>
+<area shape="rect" id="node16" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a2acb703799f9c1d7d4dbfb4894056cb5" title="activity of phosphorus&#45;31" alt="" coords="657,332,810,373"/>
+<area shape="rect" id="node20" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a05947aac278b21ba6eb69c4207bf3714" title="activity of silicon&#45;31" alt="" coords="655,267,811,308"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aac709f9e9b2a62db4623354db055d782" title="number of aluminum&#45;30 atoms" alt="" coords="871,71,1027,112"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ab06c9920f6144ba2d44b394ece7d7ab6" title="general solution to the number of aluminum&#45;30 atoms (helper function)" alt="" coords="1086,71,1242,112"/>
+<area shape="rect" id="node11" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a319a03a5a6d29bf074bd11b317f41789" title=" " alt="" coords="871,136,1027,177"/>
+<area shape="rect" id="node12" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a42ab1923fa1bcbf1fcf27dd0db41039d" title="general solution to the number of silicon&#45;30 atoms (helper function)" alt="" coords="1086,136,1242,177"/>
+<area shape="rect" id="node13" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a402e1d23dd30e363a53b0969b4439681" title="general solution to the number of aluminum&#45;31 atoms (helper function)" alt="" coords="1086,267,1242,308"/>
+<area shape="rect" id="node15" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ac46774947973a16da5c589e548d84576" title="number of aluminum&#45;31 atoms" alt="" coords="871,201,1027,243"/>
+<area shape="rect" id="node17" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a7385fe69d884cdab50a54bc67093049d" title="number of phosphorus&#45;31 atoms" alt="" coords="872,332,1025,373"/>
+<area shape="rect" id="node18" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a7a1fb2de1a0ae52e8c730fb16c03d947" title="general solution to the number of phosphorus&#45;31 atoms (helper function)" alt="" coords="1087,397,1241,439"/>
+<area shape="rect" id="node19" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aee10c5eff03059f2fa99da21dc7c19d3" title="general solution to the number of silicon&#45;31 atoms (helper function)" alt="" coords="1086,332,1242,373"/>
+<area shape="rect" id="node21" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a7088976d0611174d7e0aba6ea418dce6" title="number of silicon&#45;31 atoms" alt="" coords="871,267,1027,308"/>
+<area shape="rect" id="node23" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="465,397,588,439"/>
+<area shape="rect" id="node24" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="675,405,792,431"/>
+<area shape="rect" id="node25" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="863,397,1035,453"/>
+</map>

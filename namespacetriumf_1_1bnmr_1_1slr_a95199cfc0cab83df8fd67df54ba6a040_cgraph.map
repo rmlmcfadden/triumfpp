@@ -1,7 +1,10 @@
 <map id="triumf::bnmr::slr::pulsed_sq_exp_integral" name="triumf::bnmr::slr::pulsed_sq_exp_integral">
-<area shape="rect" id="node1" title="pulsed square exponential integral (from 0 to time_p &lt;= time)" alt="" coords="5,35,163,76"/>
-<area shape="rect" id="node2" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="211,35,333,76"/>
-<area shape="rect" id="node3" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="381,5,504,47"/>
-<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="552,42,669,69"/>
-<area shape="rect" id="node5" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="717,27,889,83"/>
+<area shape="rect" id="node1" title="pulsed square exponential integral (from 0 to time_p &lt;= time)" alt="" coords="5,51,163,93"/>
+<area shape="rect" id="node2" href="$faddeeva_8hpp.html#ad378171c5eb057a3402c8ded94af06cb" title=" " alt="" coords="253,29,291,56"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="211,81,333,122"/>
+<area shape="rect" id="node3" href="$faddeeva_8hpp.html#a7285af47f6da6478c8d9cc1ebc55991d" title=" " alt="" coords="417,29,468,56"/>
+<area shape="rect" id="node4" href="$faddeeva_8hpp.html#ab229c08c24ed3769e91f4b86f05cc9b9" title=" " alt="" coords="591,29,630,56"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="381,81,504,122"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="552,117,669,144"/>
+<area shape="rect" id="node8" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="717,103,889,159"/>
 </map>

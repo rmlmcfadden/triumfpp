@@ -1,0 +1,30 @@
+<map id="triumf::bnmr::slr::magnesium_31::s_31Mg" name="triumf::bnmr::slr::magnesium_31::s_31Mg">
+<area shape="rect" id="node1" title="general solution to the number of magnesium&#45;31 atoms (helper function)" alt="" coords="1085,413,1248,455"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aac709f9e9b2a62db4623354db055d782" title="number of aluminum&#45;30 atoms" alt="" coords="878,185,1034,227"/>
+<area shape="rect" id="node19" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a319a03a5a6d29bf074bd11b317f41789" title=" " alt="" coords="878,289,1034,331"/>
+<area shape="rect" id="node21" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ac46774947973a16da5c589e548d84576" title="number of aluminum&#45;31 atoms" alt="" coords="878,380,1034,421"/>
+<area shape="rect" id="node23" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3f89ce501f66e4eb599d9c6f217172af" title="number magnesium&#45;31 atoms" alt="" coords="875,445,1037,487"/>
+<area shape="rect" id="node25" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a7385fe69d884cdab50a54bc67093049d" title="number of phosphorus&#45;31 atoms" alt="" coords="879,511,1033,552"/>
+<area shape="rect" id="node27" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a7088976d0611174d7e0aba6ea418dce6" title="number of silicon&#45;31 atoms" alt="" coords="878,576,1034,617"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3a2823a78818a5b347f50aa25d4151b2" title="activity of aluminum&#45;30" alt="" coords="667,24,823,65"/>
+<area shape="rect" id="node12" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a6c5ad7d29634e0eaedc82ac291df3f4e" title="fractional number of aluminum&#45;30 atoms" alt="" coords="453,168,613,209"/>
+<area shape="rect" id="node13" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a6d57be88d3e8fe2937f4c8071323b255" title="total number of atoms" alt="" coords="668,572,823,613"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a5b64c87c02d39a76a11c4d7756a0fd89" title="total activity of all species in the magnesium&#45;31 decay chain" alt="" coords="455,103,610,144"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a4535919690fb72b959ed7614daa35af9" title="fractional activity of aluminum&#45;30" alt="" coords="238,5,398,47"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aa7684e7e16345f4215e941960c42655c" title="fractional activity of silicon&#45;30" alt="" coords="238,92,398,133"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ae8a613322622aa3942d968c80f1f7228" title="fractional activity of aluminum&#45;31" alt="" coords="238,192,398,233"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a9799aac791b093656e4cedc7c2191d4f" title="fractional activity of magnesium&#45;31" alt="" coords="235,301,401,343"/>
+<area shape="rect" id="node10" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a8381eed788eb88bee619204060280a0c" title="fractional activity of phosphorus&#45;31" alt="" coords="239,376,397,417"/>
+<area shape="rect" id="node11" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a2469f19b54f95a06f61daa7da96f49a4" title="fractional activity of silicon&#45;31" alt="" coords="238,460,398,501"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aeb0db18c9f49338b95cf2e71a0a3e64a" title="pulsed exponential with magnesium&#45;31 decay corrections" alt="" coords="5,301,187,343"/>
+<area shape="rect" id="node14" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ad2b3ac84c7dd50e656a8e8e3054bb947" title="fractional number of silicon&#45;30 atoms" alt="" coords="453,285,613,327"/>
+<area shape="rect" id="node15" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#afea4d19d9a1a7e0b27b6d9e5a19edc02" title="fractional number of aluminum&#45;31 atoms" alt="" coords="453,403,613,444"/>
+<area shape="rect" id="node16" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a6c10b316a1fdae7bfb7f7e115723d998" title="fractional number of magnesium&#45;31 atoms" alt="" coords="449,576,616,617"/>
+<area shape="rect" id="node17" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aea49764ffc9f5d7dbea955b653b0a96a" title="fractional number of phosphorus&#45;31 atoms" alt="" coords="454,645,611,687"/>
+<area shape="rect" id="node18" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aa99351246e2b1e4132af22f4cf1403fe" title="fractional number of silicon&#45;31 atoms" alt="" coords="453,717,613,759"/>
+<area shape="rect" id="node20" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ab83bff85b714e624a468f18fd628c42e" title="activity of silicon&#45;30" alt="" coords="667,89,823,131"/>
+<area shape="rect" id="node22" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3225f22e3387dde94026e7c083dfbcff" title=" " alt="" coords="667,207,823,248"/>
+<area shape="rect" id="node24" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a2ff38ff1ec70228201faf5556d31d6fd" title="activity of magnesium&#45;31" alt="" coords="664,324,827,365"/>
+<area shape="rect" id="node26" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a2acb703799f9c1d7d4dbfb4894056cb5" title="activity of phosphorus&#45;31" alt="" coords="669,441,822,483"/>
+<area shape="rect" id="node28" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a05947aac278b21ba6eb69c4207bf3714" title="activity of silicon&#45;31" alt="" coords="667,507,823,548"/>
+</map>

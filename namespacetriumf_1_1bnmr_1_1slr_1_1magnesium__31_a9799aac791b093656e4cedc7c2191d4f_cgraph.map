@@ -1,0 +1,22 @@
+<map id="triumf::bnmr::slr::magnesium_31::fa_31Mg" name="triumf::bnmr::slr::magnesium_31::fa_31Mg">
+<area shape="rect" id="node1" title="fractional activity of magnesium&#45;31" alt="" coords="5,107,172,148"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a2ff38ff1ec70228201faf5556d31d6fd" title="activity of magnesium&#45;31" alt="" coords="423,5,585,47"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a5b64c87c02d39a76a11c4d7756a0fd89" title="total activity of all species in the magnesium&#45;31 decay chain" alt="" coords="220,136,375,177"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3f89ce501f66e4eb599d9c6f217172af" title="number magnesium&#45;31 atoms" alt="" coords="633,71,796,112"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a43783b4fc8cf6bfe354c1cb4d8ce248d" title="general solution to the number of magnesium&#45;31 atoms (helper function)" alt="" coords="844,184,1007,225"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3a2823a78818a5b347f50aa25d4151b2" title="activity of aluminum&#45;30" alt="" coords="426,71,582,112"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ab83bff85b714e624a468f18fd628c42e" title="activity of silicon&#45;30" alt="" coords="426,136,582,177"/>
+<area shape="rect" id="node13" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a3225f22e3387dde94026e7c083dfbcff" title=" " alt="" coords="426,201,582,243"/>
+<area shape="rect" id="node15" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a2acb703799f9c1d7d4dbfb4894056cb5" title="activity of phosphorus&#45;31" alt="" coords="427,332,581,373"/>
+<area shape="rect" id="node19" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a05947aac278b21ba6eb69c4207bf3714" title="activity of silicon&#45;31" alt="" coords="426,267,582,308"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aac709f9e9b2a62db4623354db055d782" title="number of aluminum&#45;30 atoms" alt="" coords="637,5,793,47"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ab06c9920f6144ba2d44b394ece7d7ab6" title="general solution to the number of aluminum&#45;30 atoms (helper function)" alt="" coords="847,21,1003,63"/>
+<area shape="rect" id="node10" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a319a03a5a6d29bf074bd11b317f41789" title=" " alt="" coords="637,136,793,177"/>
+<area shape="rect" id="node11" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a42ab1923fa1bcbf1fcf27dd0db41039d" title="general solution to the number of silicon&#45;30 atoms (helper function)" alt="" coords="847,119,1003,160"/>
+<area shape="rect" id="node12" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a402e1d23dd30e363a53b0969b4439681" title="general solution to the number of aluminum&#45;31 atoms (helper function)" alt="" coords="847,249,1003,291"/>
+<area shape="rect" id="node14" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#ac46774947973a16da5c589e548d84576" title="number of aluminum&#45;31 atoms" alt="" coords="637,201,793,243"/>
+<area shape="rect" id="node16" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a7385fe69d884cdab50a54bc67093049d" title="number of phosphorus&#45;31 atoms" alt="" coords="638,332,791,373"/>
+<area shape="rect" id="node17" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a7a1fb2de1a0ae52e8c730fb16c03d947" title="general solution to the number of phosphorus&#45;31 atoms (helper function)" alt="" coords="849,380,1002,421"/>
+<area shape="rect" id="node18" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#aee10c5eff03059f2fa99da21dc7c19d3" title="general solution to the number of silicon&#45;31 atoms (helper function)" alt="" coords="847,315,1003,356"/>
+<area shape="rect" id="node20" href="$namespacetriumf_1_1bnmr_1_1slr_1_1magnesium__31.html#a7088976d0611174d7e0aba6ea418dce6" title="number of silicon&#45;31 atoms" alt="" coords="637,267,793,308"/>
+</map>
