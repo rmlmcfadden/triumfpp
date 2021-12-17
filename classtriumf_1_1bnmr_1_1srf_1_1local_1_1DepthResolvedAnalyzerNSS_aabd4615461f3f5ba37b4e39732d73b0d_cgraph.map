@@ -1,0 +1,9 @@
+<map id="triumf::bnmr::srf::local::DepthResolvedAnalyzerNSS::z_average" name="triumf::bnmr::srf::local::DepthResolvedAnalyzerNSS::z_average">
+<area shape="rect" id="node1" title="Return the average implantation depth." alt="" coords="5,117,197,173"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#a5c14c926951b146a6959b34bbac7512d" title="helper function for BCS Kernel" alt="" coords="260,13,423,54"/>
+<area shape="rect" id="node5" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#a4ad7bb27ee1ccf151d1867607942780a" title="Return an interpolated alpha value." alt="" coords="245,77,437,133"/>
+<area shape="rect" id="node6" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#a8c9590ead8a93e3dc826501e93926480" title="Return an interpolated beta value." alt="" coords="245,157,437,213"/>
+<area shape="rect" id="node7" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#ab5eae28e0419cea3c2f6ed1b4e1307ca" title="Return an interpolated z_max value." alt="" coords="245,237,437,293"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="485,13,648,54"/>
+<area shape="rect" id="node4" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="696,5,868,61"/>
+</map>

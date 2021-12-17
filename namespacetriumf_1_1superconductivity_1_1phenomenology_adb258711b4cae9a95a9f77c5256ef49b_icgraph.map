@@ -1,5 +1,7 @@
 <map id="triumf::superconductivity::phenomenology::penetration_depth" name="triumf::superconductivity::phenomenology::penetration_depth">
-<area shape="rect" id="node1" title=" " alt="" coords="192,39,419,80"/>
-<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1srf_1_1local.html#a6a0f04fcdd009460c59410fa1faafbec" title=" " alt="" coords="5,5,144,47"/>
-<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1srf_1_1local.html#ab4ed39a3b33658714ed5254843c834fc" title="model slr rate" alt="" coords="16,71,133,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="220,104,447,145"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1srf_1_1local.html#a4d623081eb8a4069768123b9863d79b5" title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1srf_1_1local.html#a6a0f04fcdd009460c59410fa1faafbec" title=" " alt="" coords="19,71,158,112"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1bnmr_1_1srf_1_1local.html#ad212f31146988acad93b30d157050e3e" title=" " alt="" coords="19,136,158,177"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1bnmr_1_1srf_1_1local.html#ab4ed39a3b33658714ed5254843c834fc" title=" " alt="" coords="30,201,147,243"/>
 </map>

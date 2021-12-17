@@ -1,11 +1,11 @@
 <map id="include/triumf/bnmr/srf" name="include/triumf/bnmr/srf">
 <area shape="rect" id="node1" href="dir_79f225568462475add22dab331ae790b.html" title="srf" alt="" coords="79,52,151,100"/>
 <area shape="rect" id="node2" href="dir_82f3e291ba1a6cef3bb5c6ced2d2edbc.html" title="nmr" alt="" coords="5,148,77,196"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000005_000009.html" title="4" alt="" coords="73,131,81,146"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000005_000008.html" title="4" alt="" coords="73,131,81,146"/>
 <area shape="rect" id="node3" href="dir_9db183d229763f194c415822a75bf5e0.html" title="superconductivity" alt="" coords="16,244,139,292"/>
 <area shape="rect" id="edge2-headlabel" href="dir_000005_000011.html" title="4" alt="" coords="90,220,98,235"/>
 <area shape="rect" id="node4" href="dir_e4c4ce565f952b63d09e98f91f3eba1c.html" title="srim" alt="" coords="152,148,224,196"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000005_000008.html" title="2" alt="" coords="162,121,170,136"/>
-<area shape="rect" id="edge4-headlabel" href="dir_000009_000011.html" title="2" alt="" coords="66,217,74,231"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000005_000009.html" title="2" alt="" coords="162,121,170,136"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000008_000011.html" title="2" alt="" coords="66,217,74,231"/>
 <area shape="rect" id="clust1" href="dir_473b71f16bc9624f68cd04b8842931a3.html" title="bnmr" alt="" coords="68,16,161,111"/>
 </map>

@@ -1,0 +1,25 @@
+var classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS =
+[
+    [ "DepthResolvedFilmAnalyzerNSS", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a5860cf36b281f2d55024fedd7fbcee60", null ],
+    [ "alpha", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#ac657c08906429bed3dd356ba3a6e10ae", null ],
+    [ "beta", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a3e7b794883f732f75a218ad10f12fd01", null ],
+    [ "energy_max", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a98d49576fddebbdbb8f9bc9a8ed59b52", null ],
+    [ "energy_min", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#afb4fdf52339a72e666a23ee25ae9f31c", null ],
+    [ "operator()", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#acb12e0e87153ea7c1b69bd442358234d", null ],
+    [ "read_csv_data", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a6551a380d1b52de4210de61bddece043", null ],
+    [ "z_average", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a4680be2d139d16f61b3bb4829e1e5562", null ],
+    [ "z_max", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a79778adbd32e0d1d9e283b121c01abda", null ],
+    [ "applied_field", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a73e40d47b40d1c1d9e88086d9e106fd4", null ],
+    [ "correlation_rate", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a4a7cb30edd6403d98f63c3fc45a31984", null ],
+    [ "critical_temperature", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a490c988412c7a17fe54f178a252a1e89", null ],
+    [ "dipole_field", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a444319f8e2807370111d7790cbe9ff2d", null ],
+    [ "electron_phonon_coupling", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a2a4dcca4a36faec110507f5b5d931bfd", null ],
+    [ "exponent", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a779ecab3de6af0390878954c06787636", null ],
+    [ "film_thickness", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#adb4ebcf4e6f8f83c52ace79adc8de94d", null ],
+    [ "lambda_0", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#aceec7ad8cc1cb183881980339edbbb84", null ],
+    [ "slr_constant", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a1c071d70d9f9a00fe9a8aa9fc02fe53c", null ],
+    [ "slr_exponent", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#ad0f921c4e59c83827d91a1c2fe91e573", null ],
+    [ "surface_rate", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#aa555eca298f1b4bbc993f286eeb90c05", null ],
+    [ "surface_thickness", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#ae5f7a173dd227d7f27399d2a6e77cc98", null ],
+    [ "temperature", "classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#ae3db958943cddda54d3f9df7c35c3af6", null ]
+];
