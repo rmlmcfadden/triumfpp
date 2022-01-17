@@ -57,3 +57,24 @@ BOOST_AUTO_TEST_CASE_TEMPLATE(critical_temperature, T, test_types) {
             B, T_c, B_c2, gamma) <= T_c);
   }
 }
+
+//
+BOOST_AUTO_TEST_CASE_TEMPLATE(critical_temperature_II, T, test_types) {
+  // define some constants to use in the tests
+  constexpr T T_c = 9.25; // K
+  constexpr T B_c2 = 400; // mT
+  constexpr T gamma = 2.0;
+  // explicit tests for edge cases
+  BOOST_TEST(triumf::superconductivity::phenomenology::critical_temperature_II<T>(
+                 -1.0 * B_c2, T_c, B_c2) == static_cast<T>(T_c));
+  BOOST_TEST(triumf::superconductivity::phenomenology::critical_temperature_II<T>(
+                 0.0 * B_c2, T_c, B_c2) == static_cast<T>(T_c));
+  BOOST_TEST(triumf::superconductivity::phenomenology::critical_temperature_II<T>(
+                 1.1 * B_c2, T_c, B_c2) == static_cast<T>(0.0));
+  // tests for valid input range
+  for (const auto &B : triumf::numpy::linspace<T>(0.0, B_c2, 100)) {
+    BOOST_TEST(
+        triumf::superconductivity::phenomenology::critical_temperature_II<T>(
+            B, T_c, B_c2) <= T_c);
+  }
+}

@@ -56,10 +56,10 @@ template <typename T = double> T reduced_gap(T reduced_temperature) {
 
 /// The superconducting transition temperature T_c (K) as a function of applied
 /// magnetic field. The calculation assumes a "parabolic" relationship by
-/// default (i.e., exponent = 2).
+/// default (i.e., exponent = 0.5).
 template <typename T = double>
 T critical_temperature(T applied_field, T critical_temperature_0,
-                       T critical_field, T exponent = 2.0) {
+                       T critical_field, T exponent = 0.5) {
   if (applied_field < 0.0) {
     // don't consider negative fields
     return critical_temperature_0;
@@ -70,6 +70,30 @@ T critical_temperature(T applied_field, T critical_temperature_0,
     // the phenomenological field dependence
     return critical_temperature_0 *
            std::pow(1.0 - (applied_field / critical_field), exponent);
+  }
+}
+
+/// The superconducting transition temperature T_c (K) as a function of applied
+/// magnetic field. The calculation assumes a relationship obtained from
+/// inverting: Hc2(T) / Hc2(0) = [1 - (T / Tc)^2] / [1 + (T / Tc)^2]. See e.g.,:
+/// M. Tinkham, Phys. Rev. 129, 2413 (1963).
+/// https://doi.org/10.1103/PhysRev.129.2413
+template <typename T = double>
+T critical_temperature_II(T applied_field, T critical_temperature_0,
+                          T upper_critical_field) {
+  if (applied_field < 0.0) {
+    // don't consider negative fields
+    return critical_temperature_0;
+  } else if (applied_field > upper_critical_field) {
+    // no superconductivity above the critical field
+    return 0.0;
+  } else {
+    // reduced field
+    T reduced_field = applied_field / upper_critical_field;
+    // the phenomenological field dependence
+    return critical_temperature_0 *
+           std::sqrt((1.0 - reduced_field * reduced_field) /
+                     (1.0 + reduced_field * reduced_field));
   }
 }
 
