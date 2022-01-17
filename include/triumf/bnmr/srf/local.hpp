@@ -19,6 +19,7 @@
 #include <triumf/numpy.hpp>
 #include <triumf/srim/pdf.hpp>
 #include <triumf/superconductivity/bcs.hpp>
+#include <triumf/superconductivity/phenomenology.hpp>
 #include <triumf/superconductivity/pippard.hpp>
 
 // ROOT headers
@@ -45,6 +46,14 @@ T slr_rate_z(T z, T temperature, T critical_temperature, T lambda_0, T exponent,
              T applied_field, T dipole_field, T correlation_rate,
              T slr_constant, T slr_exponent, T surface_thickness,
              T surface_rate) {
+  // correct for the field-dependence to the critical temperature
+  // https://doi.org/10.1103/PhysRevB.2.3545
+  // https://doi.org/10.1016/j.nima.2004.09.003
+  // https://doi.org/10.1088/0953-2048/25/6/065014
+  constexpr T Nb_B_c2 = 0.425; // T
+  T corrected_critical_temperature =
+      triumf::superconductivity::phenomenology::critical_temperature<T>(
+          applied_field, critical_temperature, Nb_B_c2, 0.5);
   // correct depth for the surface layer
   T _z_ = z - surface_thickness;
   if (_z_ < 0.0) {
@@ -52,8 +61,8 @@ T slr_rate_z(T z, T temperature, T critical_temperature, T lambda_0, T exponent,
   } else {
     // calculate the local field from the screening profile
     T lambda = triumf::superconductivity::phenomenology::penetration_depth(
-        temperature, critical_temperature, exponent, lambda_0);
-    T screened_field = temperature > critical_temperature
+        temperature, corrected_critical_temperature, exponent, lambda_0);
+    T screened_field = temperature > corrected_critical_temperature
                            ? applied_field
                            : applied_field * std::exp(-1.0 * _z_ / lambda);
     // calculate the dipole-dipole SLR rate in the superconducting state
@@ -75,6 +84,14 @@ T slr_rate_nss_z(T z, T temperature, T critical_temperature, T lambda_0,
                  T exponent, T applied_field, T dipole_field,
                  T correlation_rate, T slr_constant, T slr_exponent,
                  T surface_thickness) {
+  // correct for the field-dependence to the critical temperature
+  // https://doi.org/10.1103/PhysRevB.2.3545
+  // https://doi.org/10.1016/j.nima.2004.09.003
+  // https://doi.org/10.1088/0953-2048/25/6/065014
+  constexpr T Nb_B_c2 = 0.425; // T
+  T corrected_critical_temperature =
+      triumf::superconductivity::phenomenology::critical_temperature<T>(
+          applied_field, critical_temperature, Nb_B_c2, 0.5);
   // correct depth for the surface layer
   T _z_ = z - surface_thickness;
   if (_z_ < 0.0) {
@@ -90,8 +107,8 @@ T slr_rate_nss_z(T z, T temperature, T critical_temperature, T lambda_0,
   } else {
     // calculate the local field from the screening profile
     T lambda = triumf::superconductivity::phenomenology::penetration_depth(
-        temperature, critical_temperature, exponent, lambda_0);
-    T screened_field = temperature > critical_temperature
+        temperature, corrected_critical_temperature, exponent, lambda_0);
+    T screened_field = temperature > corrected_critical_temperature
                            ? applied_field
                            : applied_field * std::exp(-1.0 * _z_ / lambda);
     // calculate the dipole-dipole SLR rate in the superconducting state
@@ -113,6 +130,14 @@ T slr_rate_film_z(T z, T temperature, T critical_temperature, T lambda_0,
                   T exponent, T applied_field, T dipole_field,
                   T correlation_rate, T slr_constant, T slr_exponent,
                   T surface_thickness, T surface_rate, T film_thickness) {
+  // correct for the field-dependence to the critical temperature
+  // https://doi.org/10.1103/PhysRevB.2.3545
+  // https://doi.org/10.1016/j.nima.2004.09.003
+  // https://doi.org/10.1088/0953-2048/25/6/065014
+  constexpr T Nb_B_c2 = 0.425; // T
+  T corrected_critical_temperature =
+      triumf::superconductivity::phenomenology::critical_temperature<T>(
+          applied_field, critical_temperature, Nb_B_c2, 0.5);
   // correct depth for the surface layer
   T _z_ = z - surface_thickness;
   // correct film thickness for the surface layer
@@ -122,8 +147,8 @@ T slr_rate_film_z(T z, T temperature, T critical_temperature, T lambda_0,
   } else {
     // calculate the local field from the screening profile
     T lambda = triumf::superconductivity::phenomenology::penetration_depth(
-        temperature, critical_temperature, exponent, lambda_0);
-    T screened_field = temperature > critical_temperature
+        temperature, corrected_critical_temperature, exponent, lambda_0);
+    T screened_field = temperature > corrected_critical_temperature
                            ? applied_field
                            : applied_field *
                                  std::cosh((0.5 * _d_ - _z_) / lambda) /
@@ -147,6 +172,14 @@ T slr_rate_film_nss_z(T z, T temperature, T critical_temperature, T lambda_0,
                       T exponent, T applied_field, T dipole_field,
                       T correlation_rate, T slr_constant, T slr_exponent,
                       T surface_thickness, T film_thickness) {
+  // correct for the field-dependence to the critical temperature
+  // https://doi.org/10.1103/PhysRevB.2.3545
+  // https://doi.org/10.1016/j.nima.2004.09.003
+  // https://doi.org/10.1088/0953-2048/25/6/065014
+  constexpr T Nb_B_c2 = 0.425; // T
+  T corrected_critical_temperature =
+      triumf::superconductivity::phenomenology::critical_temperature<T>(
+          applied_field, critical_temperature, Nb_B_c2, 0.5);
   // correct depth for the surface layer
   T _z_ = z - surface_thickness;
   // correct film thickness for the surface layer
@@ -164,8 +197,8 @@ T slr_rate_film_nss_z(T z, T temperature, T critical_temperature, T lambda_0,
   } else {
     // calculate the local field from the screening profile
     T lambda = triumf::superconductivity::phenomenology::penetration_depth(
-        temperature, critical_temperature, exponent, lambda_0);
-    T screened_field = temperature > critical_temperature
+        temperature, corrected_critical_temperature, exponent, lambda_0);
+    T screened_field = temperature > corrected_critical_temperature
                            ? applied_field
                            : applied_field *
                                  std::cosh((0.5 * _d_ - _z_) / lambda) /
