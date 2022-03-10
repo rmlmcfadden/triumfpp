@@ -1,13 +1,14 @@
 <map id="triumf::bnmr::slr::pulsed_cbrt_exp" name="triumf::bnmr::slr::pulsed_cbrt_exp">
-<area shape="rect" id="node1" title="pulsed cube root exponential" alt="" coords="5,102,121,143"/>
-<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac5faacfc84dd748d64064f1d61c15f99" title="normalization for integration" alt="" coords="194,36,310,78"/>
-<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#adb278bcf32d15027fe68db03f4318260" title="pulsed cube root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="169,102,335,143"/>
-<area shape="rect" id="node9" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="387,160,509,202"/>
-<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="383,63,513,104"/>
-<area shape="rect" id="node5" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="772,36,935,78"/>
-<area shape="rect" id="node7" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="561,30,724,71"/>
-<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="561,95,724,136"/>
-<area shape="rect" id="node6" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="983,124,1155,180"/>
-<area shape="rect" id="node10" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="581,160,704,202"/>
-<area shape="rect" id="node11" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="795,168,912,194"/>
+<area shape="rect" id="node1" title="pulsed cube root exponential" alt="" coords="5,179,121,221"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1bnmr_1_1slr.html#ac5faacfc84dd748d64064f1d61c15f99" title="normalization for integration" alt="" coords="194,114,310,155"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1bnmr_1_1slr.html#adb278bcf32d15027fe68db03f4318260" title="pulsed cube root exponential integral (from 0 to time_p &lt;= time)" alt="" coords="169,179,335,221"/>
+<area shape="rect" id="node10" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#a93f2734f2b19e83d5fd5b32be596fcec" title=" " alt="" coords="387,238,509,279"/>
+<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="383,107,513,149"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1superconductivity_1_1phenomenology.html#aa12663fe8731370564f1c1471da1fc67" title=" " alt="" coords="772,5,935,61"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="561,42,724,83"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="561,107,724,149"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="561,173,724,214"/>
+<area shape="rect" id="node7" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="983,165,1155,221"/>
+<area shape="rect" id="node11" href="$namespacetriumf_1_1nmr_1_1dipole__dipole.html#ab2646c11c97f4a36a25cdb6dd7021448" title=" " alt="" coords="581,238,704,279"/>
+<area shape="rect" id="node12" href="$namespacetriumf_1_1nmr.html#a5ea0c378f1ccfbe5d46d8553e6d069f0" title=" " alt="" coords="795,245,912,272"/>
 </map>

@@ -32,6 +32,8 @@ var namespacetriumf_1_1superconductivity =
       [ "reduced_kernel", "namespacetriumf_1_1superconductivity_1_1london.html#ad108fa55f87bf9a68a6c3c2deaf18c21", null ]
     ] ],
     [ "phenomenology", "namespacetriumf_1_1superconductivity_1_1phenomenology.html", [
+      [ "critical_temperature", "namespacetriumf_1_1superconductivity_1_1phenomenology.html#aa12663fe8731370564f1c1471da1fc67", null ],
+      [ "critical_temperature_II", "namespacetriumf_1_1superconductivity_1_1phenomenology.html#a79021bceb7ead0df25643617cda02fc7", null ],
       [ "penetration_depth", "namespacetriumf_1_1superconductivity_1_1phenomenology.html#adb258711b4cae9a95a9f77c5256ef49b", null ],
       [ "reduced_gap", "namespacetriumf_1_1superconductivity_1_1phenomenology.html#aea51296f78d3d9c53dd74847849d0d81", null ],
       [ "reduced_penetration_depth", "namespacetriumf_1_1superconductivity_1_1phenomenology.html#a81697291b9c058832c36861fbe92ffac", null ],

@@ -3,9 +3,10 @@
 <area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#a4ad7bb27ee1ccf151d1867607942780a" title="Return an interpolated alpha value." alt="" coords="245,5,437,61"/>
 <area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#a8c9590ead8a93e3dc826501e93926480" title="Return an interpolated beta value." alt="" coords="245,85,437,141"/>
 <area shape="rect" id="node4" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="276,165,407,206"/>
-<area shape="rect" id="node9" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#ab5eae28e0419cea3c2f6ed1b4e1307ca" title="Return an interpolated z_max value." alt="" coords="245,229,437,285"/>
-<area shape="rect" id="node5" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="485,99,648,141"/>
-<area shape="rect" id="node7" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="485,165,648,206"/>
-<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="485,230,648,271"/>
-<area shape="rect" id="node6" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="696,92,868,148"/>
+<area shape="rect" id="node10" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#ab5eae28e0419cea3c2f6ed1b4e1307ca" title="Return an interpolated z_max value." alt="" coords="245,229,437,285"/>
+<area shape="rect" id="node5" href="$namespacetriumf_1_1superconductivity_1_1phenomenology.html#aa12663fe8731370564f1c1471da1fc67" title=" " alt="" coords="701,65,863,121"/>
+<area shape="rect" id="node6" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="485,131,648,173"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="485,197,648,238"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="485,262,648,303"/>
+<area shape="rect" id="node7" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="696,145,868,201"/>
 </map>

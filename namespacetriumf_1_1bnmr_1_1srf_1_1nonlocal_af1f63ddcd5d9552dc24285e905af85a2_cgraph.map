@@ -1,5 +1,6 @@
 <map id="triumf::bnmr::srf::nonlocal::slr_rate_z" name="triumf::bnmr::srf::nonlocal::slr_rate_z">
-<area shape="rect" id="node1" title="model slr rate" alt="" coords="5,13,137,54"/>
-<area shape="rect" id="node2" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="185,13,348,54"/>
-<area shape="rect" id="node3" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="396,5,568,61"/>
+<area shape="rect" id="node1" title="model slr rate" alt="" coords="5,42,137,83"/>
+<area shape="rect" id="node2" href="$namespacetriumf_1_1superconductivity_1_1phenomenology.html#aa12663fe8731370564f1c1471da1fc67" title=" " alt="" coords="401,5,563,61"/>
+<area shape="rect" id="node3" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="185,71,348,113"/>
+<area shape="rect" id="node4" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="396,85,568,141"/>
 </map>
