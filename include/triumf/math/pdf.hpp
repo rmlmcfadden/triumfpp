@@ -59,6 +59,14 @@ template <typename T = double> T modified_beta(const T *x, const T *par) {
   return modified_beta<T>(*x, alpha, beta, x_max);
 }
 
+/// two modified beta distributions.
+template <typename T = double>
+T two_modified_beta(T x, T alpha_1, T beta_1, T x_max_1, T fraction_1,
+                    T alpha_2, T beta_2, T x_max_2) {
+  return fraction_1 * modified_beta<T>(x, alpha_1, beta_1, x_max_1) +
+         (1.0 - fraction_1) * modified_beta<T>(x, alpha_2, beta_2, x_max_2);
+}
+
 /// modified non-central beta distribution - x in [0, x_max]
 template <typename T = double>
 T modified_non_central_beta(T x, T alpha, T beta, T lambda, T x_max) {

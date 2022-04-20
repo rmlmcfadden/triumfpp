@@ -14,10 +14,10 @@
 
 // triumf++ headers
 #include <triumf/bnmr/nuclei.hpp>
+#include <triumf/math/pdf.hpp>
 #include <triumf/nmr/dipole_dipole.hpp>
 #include <triumf/nmr/nuclei.hpp>
 #include <triumf/numpy.hpp>
-#include <triumf/srim/pdf.hpp>
 #include <triumf/superconductivity/bcs.hpp>
 #include <triumf/superconductivity/phenomenology.hpp>
 #include <triumf/superconductivity/pippard.hpp>
@@ -236,8 +236,6 @@ public:
     slr_exponent = 1.0;
     surface_thickness = 5.0;
     surface_rate = 10.0;
-    //
-    n_bins = 201;
   };
 
   /// Read the CSV data
@@ -246,12 +244,20 @@ public:
     auto df = ROOT::RDF::MakeCsvDataFrame(csv_filename);
     // ...and extract the values
     _energy = df.Take<T>("Energy (keV)").GetValue();
-    _alpha = df.Take<T>("Alpha").GetValue();
-    _alpha_error = df.Take<T>("Alpha Error").GetValue();
-    _beta = df.Take<T>("Beta").GetValue();
-    _beta_error = df.Take<T>("Beta Error").GetValue();
-    _z_max = df.Take<T>("Max (nm)").GetValue();
-    _z_max_error = df.Take<T>("Max Error (nm)").GetValue();
+    _alpha_1 = df.Take<T>("alpha_1").GetValue();
+    _alpha_1_error = df.Take<T>("alpha_1_error").GetValue();
+    _beta_1 = df.Take<T>("beta_1").GetValue();
+    _beta_1_error = df.Take<T>("beta_1_error").GetValue();
+    _z_max_1 = df.Take<T>("z_max_1").GetValue();
+    _z_max_1_error = df.Take<T>("z_max_1_error").GetValue();
+    _fraction_1 = df.Take<T>("fraction_1").GetValue();
+    _fraction_1_error = df.Take<T>("fraction_1_error").GetValue();
+    _alpha_2 = df.Take<T>("alpha_2").GetValue();
+    _alpha_2_error = df.Take<T>("alpha_2_error").GetValue();
+    _beta_2 = df.Take<T>("beta_2").GetValue();
+    _beta_2_error = df.Take<T>("beta_2_error").GetValue();
+    _z_max_2 = df.Take<T>("z_max_2").GetValue();
+    _z_max_2_error = df.Take<T>("z_max_2_error").GetValue();
   };
 
   /// Return the the minium energy available for interpolation.
@@ -266,91 +272,92 @@ public:
            std::sqrt(std::numeric_limits<T>::epsilon());
   };
 
-  /// Return an interpolated alpha value.
-  T alpha(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> alpha_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_alpha)));
-    return alpha_interpolator(energy_keV);
+  /// Return an interpolated alpha_1 value.
+  T alpha_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        alpha_interpolator_1(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_alpha_1)));
+    return alpha_interpolator_1(energy_keV);
   };
 
-  /// Return an interpolated beta value.
-  T beta(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> beta_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_beta)));
-    return beta_interpolator(energy_keV);
+  /// Return an interpolated alpha_2 value.
+  T alpha_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        alpha_interpolator_2(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_alpha_2)));
+    return alpha_interpolator_2(energy_keV);
   };
 
-  /// Return an interpolated z_max value.
-  T z_max(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> z_max_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_z_max)));
-    return z_max_interpolator(energy_keV);
+  /// Return an interpolated beta_1 value.
+  T beta_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        beta_interpolator_1(std::move(std::vector<T>(_energy)),
+                            std::move(std::vector<T>(_beta_1)));
+    return beta_interpolator_1(energy_keV);
+  };
+
+  /// Return an interpolated beta_2 value.
+  T beta_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        beta_interpolator_2(std::move(std::vector<T>(_energy)),
+                            std::move(std::vector<T>(_beta_2)));
+    return beta_interpolator_2(energy_keV);
+  };
+
+  /// Return an interpolated z_max_1 value.
+  T z_max_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        z_max_interpolator_1(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_z_max_1)));
+    return z_max_interpolator_1(energy_keV);
+  };
+
+  /// Return an interpolated z_max_2 value.
+  T z_max_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        z_max_interpolator_2(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_z_max_2)));
+    return z_max_interpolator_2(energy_keV);
+  };
+
+  /// Return an interpolated fraction_1 value.
+  T fraction_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        fraction_interpolator_1(std::move(std::vector<T>(_energy)),
+                                std::move(std::vector<T>(_fraction_1)));
+    return fraction_interpolator_1(energy_keV);
   };
 
   /// Return the average implantation depth.
   T z_average(T energy_keV) {
-    T a = alpha(energy_keV);
-    T b = beta(energy_keV);
-    T zm = z_max(energy_keV);
-    return zm * a / (a + b);
+    T a_1 = alpha_1(energy_keV);
+    T b_1 = beta_1(energy_keV);
+    T zm_1 = z_max_1(energy_keV);
+    T f_1 = fraction_1(energy_keV);
+    T a_2 = alpha_2(energy_keV);
+    T b_2 = beta_2(energy_keV);
+    T zm_2 = z_max_2(energy_keV);
+    return f_1 * zm_1 * a_1 / (a_1 + b_1) +
+           (1.0 - f_1) * zm_2 * a_2 / (a_2 + b_2);
   };
 
   /// depth-averaging using numeric integration
   T operator()(T energy_keV) {
-    // T a = alpha(energy_keV);
-    // T b = beta(energy_keV);
-    // T zm = z_max(energy_keV);
     static boost::math::quadrature::tanh_sinh<T> integrator;
     auto integrand = [&](T z) {
       return slr_rate_z<T>(z, temperature, critical_temperature, lambda_0,
                            exponent, applied_field, dipole_field,
                            correlation_rate, slr_constant, slr_exponent,
                            surface_thickness, surface_rate) *
-             triumf::srim::pdf::modified_beta<T>(
-                 z, alpha(energy_keV), beta(energy_keV), z_max(energy_keV));
+             triumf::math::pdf::two_modified_beta<T>(
+                 z, alpha_1(energy_keV), beta_1(energy_keV),
+                 z_max_1(energy_keV), fraction_1(energy_keV),
+                 alpha_2(energy_keV), beta_2(energy_keV), z_max_2(energy_keV));
     };
-    T Q = integrator.integrate(integrand, 0.0, z_max(energy_keV));
+    T z_max = std::max(z_max_1(energy_keV), z_max_2(energy_keV));
+    T Q = integrator.integrate(integrand, 0.0, z_max);
     return Q;
   };
-
-  /*
-  // depth-averaging using "histogram" summation
-  T operator()(T energy_keV) {
-    // bin edges
-    std::vector<T> z_edge =
-        triumf::numpy::linspace<T>(0.0, z_max(energy_keV), n_bins);
-    // bin widths - adjust ranges by one for "correct" size
-    std::vector<T> dz(n_bins - 1);
-    std::adjacent_difference(std::begin(z_edge) + 1, std::end(z_edge),
-                             std::begin(dz));
-    // bin centres
-    std::vector<T> z(n_bins - 1);
-    // probabilities
-    std::vector<T> p_z(n_bins - 1);
-    std::vector<T> weights(n_bins - 1);
-    std::vector<T> slr_rates(n_bins - 1);
-
-    for (std::size_t i = 0; i < z.size(); ++i) {
-      z.at(i) = z_edge.at(i) + 0.5 * dz.at(i);
-      p_z.at(i) = triumf::srim::pdf::modified_beta<T>(
-          z.at(i), alpha(energy_keV), beta(energy_keV), z_max(energy_keV));
-      // std::cout << "p(" << z.at(i) << " nm ) = " << p_z.at(i) << " nm^-1\n";
-      weights.at(i) = dz.at(i) * p_z.at(i);
-      slr_rates.at(i) = slr_rate_z<T>(
-          z.at(i), temperature, critical_temperature, lambda_0, exponent,
-          applied_field, dipole_field, correlation_rate, slr_constant,
-          slr_exponent, surface_thickness, surface_rate);
-    }
-
-    T sum_weights = std::reduce(std::begin(weights), std::end(weights), 0.0);
-    // std::cout << "sum_weights = " << sum_weights << "\n";
-    T sum_weights_slr = std::transform_reduce(
-        std::begin(weights), std::end(weights), std::begin(slr_rates), 0.0);
-    // std::cout << "sum_weights_slr = " << sum_weights_slr << "\n";
-    T weighted_average = sum_weights_slr / sum_weights;
-    return weighted_average;
-  };
-  */
 
   /// model parameters
   T temperature;
@@ -369,14 +376,20 @@ public:
 private:
   /// vectors of data from csv file
   std::vector<T> _energy;
-  std::vector<T> _alpha;
-  std::vector<T> _alpha_error;
-  std::vector<T> _beta;
-  std::vector<T> _beta_error;
-  std::vector<T> _z_max;
-  std::vector<T> _z_max_error;
-  /// number of bins + 1 used in the "histogram" summation
-  std::size_t n_bins;
+  std::vector<T> _alpha_1;
+  std::vector<T> _alpha_1_error;
+  std::vector<T> _beta_1;
+  std::vector<T> _beta_1_error;
+  std::vector<T> _z_max_1;
+  std::vector<T> _z_max_1_error;
+  std::vector<T> _fraction_1;
+  std::vector<T> _fraction_1_error;
+  std::vector<T> _alpha_2;
+  std::vector<T> _alpha_2_error;
+  std::vector<T> _beta_2;
+  std::vector<T> _beta_2_error;
+  std::vector<T> _z_max_2;
+  std::vector<T> _z_max_2_error;
 };
 
 /// Depth-resolved analyzer.
@@ -400,8 +413,6 @@ public:
     slr_exponent = 1.0;
     surface_thickness = 5.0;
     surface_rate = 10.0;
-    //
-    n_bins = 201;
   };
 
   /// Read the CSV data
@@ -410,12 +421,20 @@ public:
     auto df = ROOT::RDF::MakeCsvDataFrame(csv_filename);
     // ...and extract the values
     _energy = df.Take<T>("Energy (keV)").GetValue();
-    _alpha = df.Take<T>("Alpha").GetValue();
-    _alpha_error = df.Take<T>("Alpha Error").GetValue();
-    _beta = df.Take<T>("Beta").GetValue();
-    _beta_error = df.Take<T>("Beta Error").GetValue();
-    _z_max = df.Take<T>("Max (nm)").GetValue();
-    _z_max_error = df.Take<T>("Max Error (nm)").GetValue();
+    _alpha_1 = df.Take<T>("alpha_1").GetValue();
+    _alpha_1_error = df.Take<T>("alpha_1_error").GetValue();
+    _beta_1 = df.Take<T>("beta_1").GetValue();
+    _beta_1_error = df.Take<T>("beta_1_error").GetValue();
+    _z_max_1 = df.Take<T>("z_max_1").GetValue();
+    _z_max_1_error = df.Take<T>("z_max_1_error").GetValue();
+    _fraction_1 = df.Take<T>("fraction_1").GetValue();
+    _fraction_1_error = df.Take<T>("fraction_1_error").GetValue();
+    _alpha_2 = df.Take<T>("alpha_2").GetValue();
+    _alpha_2_error = df.Take<T>("alpha_2_error").GetValue();
+    _beta_2 = df.Take<T>("beta_2").GetValue();
+    _beta_2_error = df.Take<T>("beta_2_error").GetValue();
+    _z_max_2 = df.Take<T>("z_max_2").GetValue();
+    _z_max_2_error = df.Take<T>("z_max_2_error").GetValue();
   };
 
   /// Return the the minium energy available for interpolation.
@@ -430,91 +449,92 @@ public:
            std::sqrt(std::numeric_limits<T>::epsilon());
   };
 
-  /// Return an interpolated alpha value.
-  T alpha(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> alpha_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_alpha)));
-    return alpha_interpolator(energy_keV);
+  /// Return an interpolated alpha_1 value.
+  T alpha_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        alpha_interpolator_1(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_alpha_1)));
+    return alpha_interpolator_1(energy_keV);
   };
 
-  /// Return an interpolated beta value.
-  T beta(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> beta_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_beta)));
-    return beta_interpolator(energy_keV);
+  /// Return an interpolated alpha_2 value.
+  T alpha_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        alpha_interpolator_2(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_alpha_2)));
+    return alpha_interpolator_2(energy_keV);
   };
 
-  /// Return an interpolated z_max value.
-  T z_max(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> z_max_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_z_max)));
-    return z_max_interpolator(energy_keV);
+  /// Return an interpolated beta_1 value.
+  T beta_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        beta_interpolator_1(std::move(std::vector<T>(_energy)),
+                            std::move(std::vector<T>(_beta_1)));
+    return beta_interpolator_1(energy_keV);
+  };
+
+  /// Return an interpolated beta_2 value.
+  T beta_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        beta_interpolator_2(std::move(std::vector<T>(_energy)),
+                            std::move(std::vector<T>(_beta_2)));
+    return beta_interpolator_2(energy_keV);
+  };
+
+  /// Return an interpolated z_max_1 value.
+  T z_max_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        z_max_interpolator_1(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_z_max_1)));
+    return z_max_interpolator_1(energy_keV);
+  };
+
+  /// Return an interpolated z_max_2 value.
+  T z_max_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        z_max_interpolator_2(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_z_max_2)));
+    return z_max_interpolator_2(energy_keV);
+  };
+
+  /// Return an interpolated fraction_1 value.
+  T fraction_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        fraction_interpolator_1(std::move(std::vector<T>(_energy)),
+                                std::move(std::vector<T>(_fraction_1)));
+    return fraction_interpolator_1(energy_keV);
   };
 
   /// Return the average implantation depth.
   T z_average(T energy_keV) {
-    T a = alpha(energy_keV);
-    T b = beta(energy_keV);
-    T zm = z_max(energy_keV);
-    return zm * a / (a + b);
+    T a_1 = alpha_1(energy_keV);
+    T b_1 = beta_1(energy_keV);
+    T zm_1 = z_max_1(energy_keV);
+    T f_1 = fraction_1(energy_keV);
+    T a_2 = alpha_2(energy_keV);
+    T b_2 = beta_2(energy_keV);
+    T zm_2 = z_max_2(energy_keV);
+    return f_1 * zm_1 * a_1 / (a_1 + b_1) +
+           (1.0 - f_1) * zm_2 * a_2 / (a_2 + b_2);
   };
 
   /// depth-averaging using numeric integration
   T operator()(T energy_keV) {
-    // T a = alpha(energy_keV);
-    // T b = beta(energy_keV);
-    // T zm = z_max(energy_keV);
     static boost::math::quadrature::tanh_sinh<T> integrator;
     auto integrand = [&](T z) {
       return slr_rate_nss_z<T>(z, temperature, critical_temperature, lambda_0,
                                exponent, applied_field, dipole_field,
                                correlation_rate, slr_constant, slr_exponent,
                                surface_thickness) *
-             triumf::srim::pdf::modified_beta<T>(
-                 z, alpha(energy_keV), beta(energy_keV), z_max(energy_keV));
+             triumf::math::pdf::two_modified_beta<T>(
+                 z, alpha_1(energy_keV), beta_1(energy_keV),
+                 z_max_1(energy_keV), fraction_1(energy_keV),
+                 alpha_2(energy_keV), beta_2(energy_keV), z_max_2(energy_keV));
     };
-    T Q = integrator.integrate(integrand, 0.0, z_max(energy_keV));
+    T z_max = std::max(z_max_1(energy_keV), z_max_2(energy_keV));
+    T Q = integrator.integrate(integrand, 0.0, z_max);
     return Q;
   };
-
-  /*
-  // depth-averaging using "histogram" summation
-  T operator()(T energy_keV) {
-    // bin edges
-    std::vector<T> z_edge =
-        triumf::numpy::linspace<T>(0.0, z_max(energy_keV), n_bins);
-    // bin widths - adjust ranges by one for "correct" size
-    std::vector<T> dz(n_bins - 1);
-    std::adjacent_difference(std::begin(z_edge) + 1, std::end(z_edge),
-                             std::begin(dz));
-    // bin centres
-    std::vector<T> z(n_bins - 1);
-    // probabilities
-    std::vector<T> p_z(n_bins - 1);
-    std::vector<T> weights(n_bins - 1);
-    std::vector<T> slr_rates(n_bins - 1);
-
-    for (std::size_t i = 0; i < z.size(); ++i) {
-      z.at(i) = z_edge.at(i) + 0.5 * dz.at(i);
-      p_z.at(i) = triumf::srim::pdf::modified_beta<T>(
-          z.at(i), alpha(energy_keV), beta(energy_keV), z_max(energy_keV));
-      // std::cout << "p(" << z.at(i) << " nm ) = " << p_z.at(i) << " nm^-1\n";
-      weights.at(i) = dz.at(i) * p_z.at(i);
-      slr_rates.at(i) = slr_rate_z<T>(
-          z.at(i), temperature, critical_temperature, lambda_0, exponent,
-          applied_field, dipole_field, correlation_rate, slr_constant,
-          slr_exponent, surface_thickness, surface_rate);
-    }
-
-    T sum_weights = std::reduce(std::begin(weights), std::end(weights), 0.0);
-    // std::cout << "sum_weights = " << sum_weights << "\n";
-    T sum_weights_slr = std::transform_reduce(
-        std::begin(weights), std::end(weights), std::begin(slr_rates), 0.0);
-    // std::cout << "sum_weights_slr = " << sum_weights_slr << "\n";
-    T weighted_average = sum_weights_slr / sum_weights;
-    return weighted_average;
-  };
-  */
 
   /// model parameters
   T temperature;
@@ -533,14 +553,20 @@ public:
 private:
   /// vectors of data from csv file
   std::vector<T> _energy;
-  std::vector<T> _alpha;
-  std::vector<T> _alpha_error;
-  std::vector<T> _beta;
-  std::vector<T> _beta_error;
-  std::vector<T> _z_max;
-  std::vector<T> _z_max_error;
-  /// number of bins + 1 used in the "histogram" summation
-  std::size_t n_bins;
+  std::vector<T> _alpha_1;
+  std::vector<T> _alpha_1_error;
+  std::vector<T> _beta_1;
+  std::vector<T> _beta_1_error;
+  std::vector<T> _z_max_1;
+  std::vector<T> _z_max_1_error;
+  std::vector<T> _fraction_1;
+  std::vector<T> _fraction_1_error;
+  std::vector<T> _alpha_2;
+  std::vector<T> _alpha_2_error;
+  std::vector<T> _beta_2;
+  std::vector<T> _beta_2_error;
+  std::vector<T> _z_max_2;
+  std::vector<T> _z_max_2_error;
 };
 
 /// Depth-resolved analyzer for thin films.
@@ -565,8 +591,6 @@ public:
     surface_thickness = 5.0;
     surface_rate = 10.0;
     film_thickness = 300.0;
-    //
-    n_bins = 201;
   };
 
   /// Read the CSV data
@@ -575,12 +599,20 @@ public:
     auto df = ROOT::RDF::MakeCsvDataFrame(csv_filename);
     // ...and extract the values
     _energy = df.Take<T>("Energy (keV)").GetValue();
-    _alpha = df.Take<T>("Alpha").GetValue();
-    _alpha_error = df.Take<T>("Alpha Error").GetValue();
-    _beta = df.Take<T>("Beta").GetValue();
-    _beta_error = df.Take<T>("Beta Error").GetValue();
-    _z_max = df.Take<T>("Max (nm)").GetValue();
-    _z_max_error = df.Take<T>("Max Error (nm)").GetValue();
+    _alpha_1 = df.Take<T>("alpha_1").GetValue();
+    _alpha_1_error = df.Take<T>("alpha_1_error").GetValue();
+    _beta_1 = df.Take<T>("beta_1").GetValue();
+    _beta_1_error = df.Take<T>("beta_1_error").GetValue();
+    _z_max_1 = df.Take<T>("z_max_1").GetValue();
+    _z_max_1_error = df.Take<T>("z_max_1_error").GetValue();
+    _fraction_1 = df.Take<T>("fraction_1").GetValue();
+    _fraction_1_error = df.Take<T>("fraction_1_error").GetValue();
+    _alpha_2 = df.Take<T>("alpha_2").GetValue();
+    _alpha_2_error = df.Take<T>("alpha_2_error").GetValue();
+    _beta_2 = df.Take<T>("beta_2").GetValue();
+    _beta_2_error = df.Take<T>("beta_2_error").GetValue();
+    _z_max_2 = df.Take<T>("z_max_2").GetValue();
+    _z_max_2_error = df.Take<T>("z_max_2_error").GetValue();
   };
 
   /// Return the the minium energy available for interpolation.
@@ -595,33 +627,73 @@ public:
            std::sqrt(std::numeric_limits<T>::epsilon());
   };
 
-  /// Return an interpolated alpha value.
-  T alpha(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> alpha_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_alpha)));
-    return alpha_interpolator(energy_keV);
+  /// Return an interpolated alpha_1 value.
+  T alpha_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        alpha_interpolator_1(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_alpha_1)));
+    return alpha_interpolator_1(energy_keV);
   };
 
-  /// Return an interpolated beta value.
-  T beta(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> beta_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_beta)));
-    return beta_interpolator(energy_keV);
+  /// Return an interpolated alpha_2 value.
+  T alpha_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        alpha_interpolator_2(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_alpha_2)));
+    return alpha_interpolator_2(energy_keV);
   };
 
-  /// Return an interpolated z_max value.
-  T z_max(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> z_max_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_z_max)));
-    return z_max_interpolator(energy_keV);
+  /// Return an interpolated beta_1 value.
+  T beta_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        beta_interpolator_1(std::move(std::vector<T>(_energy)),
+                            std::move(std::vector<T>(_beta_1)));
+    return beta_interpolator_1(energy_keV);
+  };
+
+  /// Return an interpolated beta_2 value.
+  T beta_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        beta_interpolator_2(std::move(std::vector<T>(_energy)),
+                            std::move(std::vector<T>(_beta_2)));
+    return beta_interpolator_2(energy_keV);
+  };
+
+  /// Return an interpolated z_max_1 value.
+  T z_max_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        z_max_interpolator_1(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_z_max_1)));
+    return z_max_interpolator_1(energy_keV);
+  };
+
+  /// Return an interpolated z_max_2 value.
+  T z_max_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        z_max_interpolator_2(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_z_max_2)));
+    return z_max_interpolator_2(energy_keV);
+  };
+
+  /// Return an interpolated fraction_1 value.
+  T fraction_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        fraction_interpolator_1(std::move(std::vector<T>(_energy)),
+                                std::move(std::vector<T>(_fraction_1)));
+    return fraction_interpolator_1(energy_keV);
   };
 
   /// Return the average implantation depth.
   T z_average(T energy_keV) {
-    T a = alpha(energy_keV);
-    T b = beta(energy_keV);
-    T zm = z_max(energy_keV);
-    return zm * a / (a + b);
+    T a_1 = alpha_1(energy_keV);
+    T b_1 = beta_1(energy_keV);
+    T zm_1 = z_max_1(energy_keV);
+    T f_1 = fraction_1(energy_keV);
+    T a_2 = alpha_2(energy_keV);
+    T b_2 = beta_2(energy_keV);
+    T zm_2 = z_max_2(energy_keV);
+    return f_1 * zm_1 * a_1 / (a_1 + b_1) +
+           (1.0 - f_1) * zm_2 * a_2 / (a_2 + b_2);
   };
 
   /// depth-averaging using numeric integration
@@ -633,10 +705,13 @@ public:
                                 correlation_rate, slr_constant, slr_exponent,
                                 surface_thickness, surface_rate,
                                 film_thickness) *
-             triumf::srim::pdf::modified_beta<T>(
-                 z, alpha(energy_keV), beta(energy_keV), z_max(energy_keV));
+             triumf::math::pdf::two_modified_beta<T>(
+                 z, alpha_1(energy_keV), beta_1(energy_keV),
+                 z_max_1(energy_keV), fraction_1(energy_keV),
+                 alpha_2(energy_keV), beta_2(energy_keV), z_max_2(energy_keV));
     };
-    T Q = integrator.integrate(integrand, 0.0, z_max(energy_keV));
+    T z_max = std::max(z_max_1(energy_keV), z_max_2(energy_keV));
+    T Q = integrator.integrate(integrand, 0.0, z_max);
     return Q;
   };
 
@@ -658,14 +733,20 @@ public:
 private:
   /// vectors of data from csv file
   std::vector<T> _energy;
-  std::vector<T> _alpha;
-  std::vector<T> _alpha_error;
-  std::vector<T> _beta;
-  std::vector<T> _beta_error;
-  std::vector<T> _z_max;
-  std::vector<T> _z_max_error;
-  /// number of bins + 1 used in the "histogram" summation
-  std::size_t n_bins;
+  std::vector<T> _alpha_1;
+  std::vector<T> _alpha_1_error;
+  std::vector<T> _beta_1;
+  std::vector<T> _beta_1_error;
+  std::vector<T> _z_max_1;
+  std::vector<T> _z_max_1_error;
+  std::vector<T> _fraction_1;
+  std::vector<T> _fraction_1_error;
+  std::vector<T> _alpha_2;
+  std::vector<T> _alpha_2_error;
+  std::vector<T> _beta_2;
+  std::vector<T> _beta_2_error;
+  std::vector<T> _z_max_2;
+  std::vector<T> _z_max_2_error;
 };
 
 /// Depth-resolved analyzer for thin films.
@@ -690,8 +771,6 @@ public:
     surface_thickness = 5.0;
     surface_rate = 10.0;
     film_thickness = 300.0;
-    //
-    n_bins = 201;
   };
 
   /// Read the CSV data
@@ -700,12 +779,20 @@ public:
     auto df = ROOT::RDF::MakeCsvDataFrame(csv_filename);
     // ...and extract the values
     _energy = df.Take<T>("Energy (keV)").GetValue();
-    _alpha = df.Take<T>("Alpha").GetValue();
-    _alpha_error = df.Take<T>("Alpha Error").GetValue();
-    _beta = df.Take<T>("Beta").GetValue();
-    _beta_error = df.Take<T>("Beta Error").GetValue();
-    _z_max = df.Take<T>("Max (nm)").GetValue();
-    _z_max_error = df.Take<T>("Max Error (nm)").GetValue();
+    _alpha_1 = df.Take<T>("alpha_1").GetValue();
+    _alpha_1_error = df.Take<T>("alpha_1_error").GetValue();
+    _beta_1 = df.Take<T>("beta_1").GetValue();
+    _beta_1_error = df.Take<T>("beta_1_error").GetValue();
+    _z_max_1 = df.Take<T>("z_max_1").GetValue();
+    _z_max_1_error = df.Take<T>("z_max_1_error").GetValue();
+    _fraction_1 = df.Take<T>("fraction_1").GetValue();
+    _fraction_1_error = df.Take<T>("fraction_1_error").GetValue();
+    _alpha_2 = df.Take<T>("alpha_2").GetValue();
+    _alpha_2_error = df.Take<T>("alpha_2_error").GetValue();
+    _beta_2 = df.Take<T>("beta_2").GetValue();
+    _beta_2_error = df.Take<T>("beta_2_error").GetValue();
+    _z_max_2 = df.Take<T>("z_max_2").GetValue();
+    _z_max_2_error = df.Take<T>("z_max_2_error").GetValue();
   };
 
   /// Return the the minium energy available for interpolation.
@@ -720,33 +807,73 @@ public:
            std::sqrt(std::numeric_limits<T>::epsilon());
   };
 
-  /// Return an interpolated alpha value.
-  T alpha(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> alpha_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_alpha)));
-    return alpha_interpolator(energy_keV);
+  /// Return an interpolated alpha_1 value.
+  T alpha_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        alpha_interpolator_1(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_alpha_1)));
+    return alpha_interpolator_1(energy_keV);
   };
 
-  /// Return an interpolated beta value.
-  T beta(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> beta_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_beta)));
-    return beta_interpolator(energy_keV);
+  /// Return an interpolated alpha_2 value.
+  T alpha_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        alpha_interpolator_2(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_alpha_2)));
+    return alpha_interpolator_2(energy_keV);
   };
 
-  /// Return an interpolated z_max value.
-  T z_max(T energy_keV) {
-    static boost::math::interpolators::pchip<std::vector<T>> z_max_interpolator(
-        std::move(std::vector<T>(_energy)), std::move(std::vector<T>(_z_max)));
-    return z_max_interpolator(energy_keV);
+  /// Return an interpolated beta_1 value.
+  T beta_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        beta_interpolator_1(std::move(std::vector<T>(_energy)),
+                            std::move(std::vector<T>(_beta_1)));
+    return beta_interpolator_1(energy_keV);
+  };
+
+  /// Return an interpolated beta_2 value.
+  T beta_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        beta_interpolator_2(std::move(std::vector<T>(_energy)),
+                            std::move(std::vector<T>(_beta_2)));
+    return beta_interpolator_2(energy_keV);
+  };
+
+  /// Return an interpolated z_max_1 value.
+  T z_max_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        z_max_interpolator_1(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_z_max_1)));
+    return z_max_interpolator_1(energy_keV);
+  };
+
+  /// Return an interpolated z_max_2 value.
+  T z_max_2(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        z_max_interpolator_2(std::move(std::vector<T>(_energy)),
+                             std::move(std::vector<T>(_z_max_2)));
+    return z_max_interpolator_2(energy_keV);
+  };
+
+  /// Return an interpolated fraction_1 value.
+  T fraction_1(T energy_keV) {
+    static boost::math::interpolators::pchip<std::vector<T>>
+        fraction_interpolator_1(std::move(std::vector<T>(_energy)),
+                                std::move(std::vector<T>(_fraction_1)));
+    return fraction_interpolator_1(energy_keV);
   };
 
   /// Return the average implantation depth.
   T z_average(T energy_keV) {
-    T a = alpha(energy_keV);
-    T b = beta(energy_keV);
-    T zm = z_max(energy_keV);
-    return zm * a / (a + b);
+    T a_1 = alpha_1(energy_keV);
+    T b_1 = beta_1(energy_keV);
+    T zm_1 = z_max_1(energy_keV);
+    T f_1 = fraction_1(energy_keV);
+    T a_2 = alpha_2(energy_keV);
+    T b_2 = beta_2(energy_keV);
+    T zm_2 = z_max_2(energy_keV);
+    return f_1 * zm_1 * a_1 / (a_1 + b_1) +
+           (1.0 - f_1) * zm_2 * a_2 / (a_2 + b_2);
   };
 
   /// depth-averaging using numeric integration
@@ -757,10 +884,13 @@ public:
                  z, temperature, critical_temperature, lambda_0, exponent,
                  applied_field, dipole_field, correlation_rate, slr_constant,
                  slr_exponent, surface_thickness, film_thickness) *
-             triumf::srim::pdf::modified_beta<T>(
-                 z, alpha(energy_keV), beta(energy_keV), z_max(energy_keV));
+             triumf::math::pdf::two_modified_beta<T>(
+                 z, alpha_1(energy_keV), beta_1(energy_keV),
+                 z_max_1(energy_keV), fraction_1(energy_keV),
+                 alpha_2(energy_keV), beta_2(energy_keV), z_max_2(energy_keV));
     };
-    T Q = integrator.integrate(integrand, 0.0, z_max(energy_keV));
+    T z_max = std::max(z_max_1(energy_keV), z_max_2(energy_keV));
+    T Q = integrator.integrate(integrand, 0.0, z_max);
     return Q;
   };
 
@@ -782,14 +912,20 @@ public:
 private:
   /// vectors of data from csv file
   std::vector<T> _energy;
-  std::vector<T> _alpha;
-  std::vector<T> _alpha_error;
-  std::vector<T> _beta;
-  std::vector<T> _beta_error;
-  std::vector<T> _z_max;
-  std::vector<T> _z_max_error;
-  /// number of bins + 1 used in the "histogram" summation
-  std::size_t n_bins;
+  std::vector<T> _alpha_1;
+  std::vector<T> _alpha_1_error;
+  std::vector<T> _beta_1;
+  std::vector<T> _beta_1_error;
+  std::vector<T> _z_max_1;
+  std::vector<T> _z_max_1_error;
+  std::vector<T> _fraction_1;
+  std::vector<T> _fraction_1_error;
+  std::vector<T> _alpha_2;
+  std::vector<T> _alpha_2_error;
+  std::vector<T> _beta_2;
+  std::vector<T> _beta_2_error;
+  std::vector<T> _z_max_2;
+  std::vector<T> _z_max_2_error;
 };
 
 } // namespace local
