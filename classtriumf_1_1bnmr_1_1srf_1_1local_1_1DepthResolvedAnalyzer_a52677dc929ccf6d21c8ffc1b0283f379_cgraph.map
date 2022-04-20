@@ -1,12 +1,16 @@
 <map id="triumf::bnmr::srf::local::DepthResolvedAnalyzer::operator()" name="triumf::bnmr::srf::local::DepthResolvedAnalyzer::operator()">
-<area shape="rect" id="node1" title="depth&#45;averaging using numeric integration" alt="" coords="5,111,197,167"/>
-<area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a2b1697fb5e20e7bba19a0f164508b077" title="Return an interpolated alpha value." alt="" coords="261,5,453,61"/>
-<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a0305287b6a2e55be1264de0e0213895d" title="Return an interpolated beta value." alt="" coords="245,85,468,126"/>
-<area shape="rect" id="node4" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="291,150,422,191"/>
-<area shape="rect" id="node10" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#ab0eb2e77e7157843d8e602170c3bc631" title="Return an interpolated z_max value." alt="" coords="261,215,453,271"/>
-<area shape="rect" id="node5" href="$namespacetriumf_1_1superconductivity_1_1phenomenology.html#aa12663fe8731370564f1c1471da1fc67" title=" " alt="" coords="731,51,894,107"/>
-<area shape="rect" id="node6" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="516,117,679,158"/>
-<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="516,182,679,223"/>
-<area shape="rect" id="node9" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="516,247,679,289"/>
-<area shape="rect" id="node7" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="727,131,899,187"/>
+<area shape="rect" id="node1" title="depth&#45;averaging using numeric integration" alt="" coords="5,285,197,341"/>
+<area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#af2b65a2fbf4ee21a42140f5b06d1aab9" title="Return an interpolated alpha_1 value." alt="" coords="245,5,437,61"/>
+<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a555096bb39d4c392f8f90ee87e0da55f" title="Return an interpolated alpha_2 value." alt="" coords="245,85,437,141"/>
+<area shape="rect" id="node4" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a8ec2778d8fbda8287efe5af0a663ff6b" title="Return an interpolated beta_1 value." alt="" coords="245,165,437,221"/>
+<area shape="rect" id="node5" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a073678a8bec2475394cbcf89f74bd87d" title="Return an interpolated beta_2 value." alt="" coords="245,245,437,301"/>
+<area shape="rect" id="node6" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a778adf66ef1b791a1e493a49b113bc14" title="Return an interpolated fraction_1 value." alt="" coords="245,325,437,381"/>
+<area shape="rect" id="node7" href="$namespacetriumf_1_1nmr_1_1hebel__slichter.html#a5db0b86992f3153a33b1e1ca6e721dec" title=" " alt="" coords="276,405,407,446"/>
+<area shape="rect" id="node13" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a0319a652354fcda1ac435591bac702b0" title="Return an interpolated z_max_1 value." alt="" coords="245,469,437,525"/>
+<area shape="rect" id="node14" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#ae42a78cb6d1ffa0f8a999a86b8cb3a23" title="Return an interpolated z_max_2 value." alt="" coords="245,549,437,605"/>
+<area shape="rect" id="node8" href="$namespacetriumf_1_1superconductivity_1_1phenomenology.html#aa12663fe8731370564f1c1471da1fc67" title=" " alt="" coords="701,305,863,361"/>
+<area shape="rect" id="node9" href="$namespacetriumf_1_1superconductivity_1_1bcs.html#af538279cd3b16941d19a599773ae290d" title="energy gap at absolute zero" alt="" coords="485,371,648,413"/>
+<area shape="rect" id="node11" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a2e6b62942a2926d6f42b3914d74863dd" title=" " alt="" coords="485,437,648,478"/>
+<area shape="rect" id="node12" href="$namespacetriumf_1_1superconductivity_1_1dynes.html#a0f00fa6fdbfc3c2349dd8f42d6edcac6" title=" " alt="" coords="485,502,648,543"/>
+<area shape="rect" id="node10" href="$structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="696,385,868,441"/>
 </map>

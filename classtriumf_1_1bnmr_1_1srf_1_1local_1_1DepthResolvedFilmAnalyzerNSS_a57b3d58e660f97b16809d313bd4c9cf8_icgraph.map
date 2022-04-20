@@ -1,0 +1,5 @@
+<map id="triumf::bnmr::srf::local::DepthResolvedFilmAnalyzerNSS::z_max_1" name="triumf::bnmr::srf::local::DepthResolvedFilmAnalyzerNSS::z_max_1">
+<area shape="rect" id="node1" title="Return an interpolated z_max_1 value." alt="" coords="271,45,488,101"/>
+<area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#acb12e0e87153ea7c1b69bd442358234d" title="depth&#45;averaging using numeric integration" alt="" coords="5,5,223,61"/>
+<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzerNSS.html#a4680be2d139d16f61b3bb4829e1e5562" title="Return the average implantation depth." alt="" coords="5,85,223,141"/>
+</map>

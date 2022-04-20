@@ -7,5 +7,6 @@ var math_2pdf_8hpp =
     [ "modified_non_central_beta", "math_2pdf_8hpp.html#a9c1809b5c42af750f13e4a5a945faff1", null ],
     [ "modified_non_central_beta", "math_2pdf_8hpp.html#ace38c427ae2b2eb99d58a1357a2e8061", null ],
     [ "skew_normal_distribution", "math_2pdf_8hpp.html#a3f7b1fccd11c25914db50928293e676a", null ],
-    [ "skew_normal_distribution", "math_2pdf_8hpp.html#af465058d642f3efeab9c705f7e1ba019", null ]
+    [ "skew_normal_distribution", "math_2pdf_8hpp.html#af465058d642f3efeab9c705f7e1ba019", null ],
+    [ "two_modified_beta", "math_2pdf_8hpp.html#a53c37a1c1062567cb704b423f37788c5", null ]
 ];

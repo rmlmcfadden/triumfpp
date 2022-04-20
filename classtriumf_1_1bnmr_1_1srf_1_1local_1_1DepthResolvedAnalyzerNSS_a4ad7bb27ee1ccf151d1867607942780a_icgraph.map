@@ -1,5 +1,0 @@
-<map id="triumf::bnmr::srf::local::DepthResolvedAnalyzerNSS::alpha" name="triumf::bnmr::srf::local::DepthResolvedAnalyzerNSS::alpha">
-<area shape="rect" id="node1" title="Return an interpolated alpha value." alt="" coords="245,45,437,101"/>
-<area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#a6dc68062124243e593764c45277cb1f2" title="depth&#45;averaging using numeric integration" alt="" coords="5,5,197,61"/>
-<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzerNSS.html#aabd4615461f3f5ba37b4e39732d73b0d" title="Return the average implantation depth." alt="" coords="5,85,197,141"/>
-</map>

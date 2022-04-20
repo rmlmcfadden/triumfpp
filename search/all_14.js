@@ -74,5 +74,6 @@ var searchData=
   ['triton_5fto_5fproton_5fmag_5fmom_5fratio_71',['triton_to_proton_mag_mom_ratio',['../structtriumf_1_1constants_1_1codata__2018_1_1triton__to__proton__mag__mom__ratio.html',1,'triumf::constants::codata_2018']]],
   ['triumf_72',['triumf',['../namespacetriumf.html',1,'']]],
   ['triumf_2b_2b_73',['triumf++',['../index.html',1,'']]],
-  ['utilities_74',['utilities',['../namespacetriumf_1_1nmr_1_1utilities.html',1,'triumf::nmr']]]
+  ['two_5fmodified_5fbeta_74',['two_modified_beta',['../namespacetriumf_1_1math_1_1pdf.html#a53c37a1c1062567cb704b423f37788c5',1,'triumf::math::pdf']]],
+  ['utilities_75',['utilities',['../namespacetriumf_1_1nmr_1_1utilities.html',1,'triumf::nmr']]]
 ];

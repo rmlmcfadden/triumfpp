@@ -1,0 +1,5 @@
+<map id="triumf::bnmr::srf::local::DepthResolvedFilmAnalyzer::alpha_1" name="triumf::bnmr::srf::local::DepthResolvedFilmAnalyzer::alpha_1">
+<area shape="rect" id="node1" title="Return an interpolated alpha_1 value." alt="" coords="271,45,488,101"/>
+<area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer.html#a6b633f5ef7fa65934abb61df00302441" title="depth&#45;averaging using numeric integration" alt="" coords="5,5,223,61"/>
+<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedFilmAnalyzer.html#aac3a315c4ede46e62e40b2722372d097" title="Return the average implantation depth." alt="" coords="5,85,223,141"/>
+</map>

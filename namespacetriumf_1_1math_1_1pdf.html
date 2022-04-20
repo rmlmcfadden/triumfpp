@@ -115,6 +115,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a40cbf462f4cb4c4606d2999ef171f74e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetriumf_1_1math_1_1pdf.html#a40cbf462f4cb4c4606d2999ef171f74e">modified_beta</a> (const T *x, const T *par)</td></tr>
 <tr class="memdesc:a40cbf462f4cb4c4606d2999ef171f74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">modified beta distribution - x in [0, x_max] (ROOT interface)  <a href="namespacetriumf_1_1math_1_1pdf.html#a40cbf462f4cb4c4606d2999ef171f74e">More...</a><br /></td></tr>
 <tr class="separator:a40cbf462f4cb4c4606d2999ef171f74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c37a1c1062567cb704b423f37788c5"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
+<tr class="memitem:a53c37a1c1062567cb704b423f37788c5"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetriumf_1_1math_1_1pdf.html#a53c37a1c1062567cb704b423f37788c5">two_modified_beta</a> (T x, T alpha_1, T beta_1, T x_max_1, T fraction_1, T alpha_2, T beta_2, T x_max_2)</td></tr>
+<tr class="memdesc:a53c37a1c1062567cb704b423f37788c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">two modified beta distributions.  <a href="namespacetriumf_1_1math_1_1pdf.html#a53c37a1c1062567cb704b423f37788c5">More...</a><br /></td></tr>
+<tr class="separator:a53c37a1c1062567cb704b423f37788c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace38c427ae2b2eb99d58a1357a2e8061"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
 <tr class="memitem:ace38c427ae2b2eb99d58a1357a2e8061"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetriumf_1_1math_1_1pdf.html#ace38c427ae2b2eb99d58a1357a2e8061">modified_non_central_beta</a> (T x, T alpha, T beta, T lambda, T x_max)</td></tr>
 <tr class="memdesc:ace38c427ae2b2eb99d58a1357a2e8061"><td class="mdescLeft">&#160;</td><td class="mdescRight">modified non-central beta distribution - x in [0, x_max]  <a href="namespacetriumf_1_1math_1_1pdf.html#ace38c427ae2b2eb99d58a1357a2e8061">More...</a><br /></td></tr>
@@ -351,7 +355,7 @@ template&lt;typename T  = double&gt; </div>
 
 <p>modified non-central beta distribution - x in [0, x_max] (ROOT interface) </p>
 
-<p class="definition">Definition at line <a class="el" href="math_2pdf_8hpp_source.html#l00079">79</a> of file <a class="el" href="math_2pdf_8hpp_source.html">pdf.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_2pdf_8hpp_source.html#l00087">87</a> of file <a class="el" href="math_2pdf_8hpp_source.html">pdf.hpp</a>.</p>
 
 </div>
 </div>
@@ -403,7 +407,7 @@ template&lt;typename T  = double&gt; </div>
 
 <p>modified non-central beta distribution - x in [0, x_max] </p>
 
-<p class="definition">Definition at line <a class="el" href="math_2pdf_8hpp_source.html#l00064">64</a> of file <a class="el" href="math_2pdf_8hpp_source.html">pdf.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_2pdf_8hpp_source.html#l00072">72</a> of file <a class="el" href="math_2pdf_8hpp_source.html">pdf.hpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -509,6 +513,76 @@ template&lt;typename T  = double&gt; </div>
 <area shape="rect" href="structtriumf_1_1constants_1_1codata__2018_1_1Boltzmann__constant__in__eV__K.html#a2bc082782fbd90f9ac269c77c12bb34b" title="Returns the constant&#39;s value." alt="" coords="433,5,605,61"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a53c37a1c1062567cb704b423f37788c5" name="a53c37a1c1062567cb704b423f37788c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c37a1c1062567cb704b423f37788c5">&#9670;&nbsp;</a></span>two_modified_beta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T triumf::math::pdf::two_modified_beta </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>alpha_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>beta_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x_max_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>fraction_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>alpha_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>beta_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x_max_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>two modified beta distributions. </p>
+
+<p class="definition">Definition at line <a class="el" href="math_2pdf_8hpp_source.html#l00064">64</a> of file <a class="el" href="math_2pdf_8hpp_source.html">pdf.hpp</a>.</p>
 
 </div>
 </div>

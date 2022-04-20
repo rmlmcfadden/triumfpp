@@ -1,0 +1,5 @@
+<map id="triumf::bnmr::srf::local::DepthResolvedAnalyzer::fraction_1" name="triumf::bnmr::srf::local::DepthResolvedAnalyzer::fraction_1">
+<area shape="rect" id="node1" title="Return an interpolated fraction_1 value." alt="" coords="245,45,437,101"/>
+<area shape="rect" id="node2" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#a52677dc929ccf6d21c8ffc1b0283f379" title="depth&#45;averaging using numeric integration" alt="" coords="5,5,197,61"/>
+<area shape="rect" id="node3" href="$classtriumf_1_1bnmr_1_1srf_1_1local_1_1DepthResolvedAnalyzer.html#ae7d933aebac69f559a42cdf2ce57e584" title="Return the average implantation depth." alt="" coords="5,85,197,141"/>
+</map>
